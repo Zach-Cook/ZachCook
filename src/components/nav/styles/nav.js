@@ -4,6 +4,7 @@ import { Link as ReactRouterLink } from 'react-router-dom';
 export const NavFrame = styled.header`
     margin:0;
     padding:0;
+    
     width: 100%;
 
     display: flex;
@@ -16,15 +17,12 @@ export const NavInner = styled.div`
     width: 95%;
     display: flex;
     justify-content: space-between;
-    border: 2px solid green;
 `;
 
 
 export const NavLeft = styled.div`
 
     width: 20%;
-
-    border: 2px solid pink;
     display: flex;
     align-items: center;
 `;
@@ -34,19 +32,19 @@ export const NavTitle = styled.h1`
     font-family: Lora;
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 35px;
     line-height: 36px;
     /* identical to box height */
+    color: #FFFFFF;
 
 `;
 
 export const NavRight = styled.nav`
 
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: space-between;
 
-    border: 2px solid yellow;
 `;
 
 
@@ -66,6 +64,5 @@ export const NavText = styled.p`
     font-size: 28px;
     line-height: 36px;
     /* identical to box height */
-    // color: #FFFFFF;
-    color: black;
+    color: #FFFFFF;
 `;
