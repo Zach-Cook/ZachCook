@@ -14,4 +14,8 @@ export const BackGroundIMG = styled.div`
     -webkit-background-size: cover;
     background-position: center center;
     height: 650px;
+
+    @media screen and (min-width: 1920px){
+        height: 1000px;
+    }
 `;
