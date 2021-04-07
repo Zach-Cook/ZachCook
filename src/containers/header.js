@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 import { Nav } from '../components'
@@ -6,6 +6,7 @@ import { Nav } from '../components'
 
 export default function HeaderContainer(){
 
+    const [ isMobileNavOpen, setIsMobileNavOpen ] = useState('true')
 
     return(
         <Nav>
@@ -13,7 +14,11 @@ export default function HeaderContainer(){
                 <Nav.NavLeft>
                     <Nav.NavTitle>Zach</Nav.NavTitle>
                 </Nav.NavLeft>
-                <Nav.NavRight>
+                <Nav.NavRight display={isMobileNavOpen}>
+                    {/* <Nav.HamburgerFrame>
+
+                    </Nav.HamburgerFrame> */}
+                    {/* <Nav.UL></Nav.UL> */}
                     <Nav.Navli>
                         <Nav.NavText>Home</Nav.NavText>
                     </Nav.Navli>

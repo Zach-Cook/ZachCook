@@ -9,7 +9,13 @@ export const NavFrame = styled.header`
 
     display: flex;
     justify-content: center;
+    height: 650px;
+    border: 2px solid pink;
 
+
+    @media screen and (min-width: 1280px){
+        height: auto;
+    }
 `;
 
 export const NavInner = styled.div`
@@ -17,6 +23,16 @@ export const NavInner = styled.div`
     width: 95%;
     display: flex;
     justify-content: space-between;
+
+
+    border: 2px solid green;
+`;
+
+export const HamburgerFrame = styled.div`
+
+    width: 20%;
+    border: 2px solid pink;
+
 `;
 
 
@@ -36,15 +52,29 @@ export const NavTitle = styled.h1`
     line-height: 36px;
     /* identical to box height */
     color: #FFFFFF;
+    display: none;
+    
+    @media screen and (min-width: 1280px){
+        display: block;
+    }
 
 `;
 
 export const NavRight = styled.nav`
 
-    width: 45%;
-    display: flex;
+    width: 75%;
     justify-content: space-between;
+    flex-direction: column;
+    background: white;
+    border: 2px solid yellow;
+    display: ${props => props.display ? 'flex' : 'none'};
 
+    @media screen and (min-width: 1280px){
+        display: flex;
+        background: none;
+        width: 45%;
+        flex-direction: row;
+    }
 `;
 
 
@@ -54,6 +84,8 @@ export const Navli = styled.li`
     text-decoration: none;
     list-style: none;
     display: flex;
+    border: 2px solid orange;
+    justify-content: center;
 `;
 
 export const NavText = styled.p`
@@ -64,5 +96,9 @@ export const NavText = styled.p`
     font-size: 28px;
     line-height: 36px;
     /* identical to box height */
-    color: #FFFFFF;
+    color: #1C598F;
+
+    @media screen and (min-width: 1280px){
+        color #FFFFFF
+    }
 `;

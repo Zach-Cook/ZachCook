@@ -9,7 +9,7 @@ export const BackGroundFrame = styled.div`
 export const BackGroundIMG = styled.div`
 
     width: 100%;
-    background: linear-gradient(0deg, rgba(64, 60, 54, 0.4), rgba(64, 80, 95, 0.4)), url(${props => props.url});
+    background: url(${props => props.url});
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-position: center center;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavFrame, NavInner, NavLeft, NavTitle, NavRight, Navli, NavText } from './styles/nav'
+import { NavFrame, NavInner, HamburgerFrame, NavLeft, NavTitle, NavRight, Navli, NavText } from './styles/nav'
 
 export default function Nav({children, ...restProps}){
     return <NavFrame {...restProps}>{children}</NavFrame>
@@ -7,6 +7,10 @@ export default function Nav({children, ...restProps}){
 
 Nav.NavInner = function NavNavInner({children, ...restProps}){
     return <NavInner {...restProps}>{children}</NavInner>
+}
+
+Nav.HamburgerFrame = function NavHamburgerFrame({children, ...restProps}){
+    return <HamburgerFrame {...restProps}>{children}</HamburgerFrame>
 }
 
 Nav.NavLeft = function NavNavLeft({children, ...restProps}){
