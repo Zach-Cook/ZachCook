@@ -10,7 +10,6 @@ export const NavFrame = styled.header`
     display: flex;
     justify-content: center;
     height: 650px;
-    border: 2px solid pink;
 
 
     @media screen and (min-width: 1280px){
@@ -25,16 +24,101 @@ export const NavInner = styled.div`
     justify-content: space-between;
 
 
-    border: 2px solid green;
 `;
 
+// MAKE THIS POSITION ABSOLUE OR STICKY
 export const HamburgerFrame = styled.div`
+    
+    width: 100%;
+    display: ${ props => props.display === 'flex' ? 'none' : "flex"};
+    justify-content: flex-end;    
+    margin-top: 10px;
 
-    width: 20%;
-    border: 2px solid pink;
+    @media screen and (min-width: 1280px){
+        display: none;
+    }
+`;
+
+export const HamburgerFrameInner = styled.div`
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    width: 15%;
+
+    @media screen and (min-width: 1280px){
+        display: none;
+    }
 
 `;
 
+export const HamburgerDiv = styled.div`
+    
+    background: #FFFFFF;
+    width: 100%;
+    height: 2px;
+
+`;
+
+export const ExitFrame = styled.div`
+
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+
+    @media screen and (min-width: 1280px){
+        display: none;
+    }
+`;
+
+export const ExitFrameInner = styled.div`
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    display: flex;
+    width: 25%;
+
+    @media screen and (min-width: 1280px){
+        display: none;
+    }
+
+`;
+
+export const RightSlash = styled.div`
+    position: absolute;
+    background: #1C598F;
+    /* White */
+    width: 50%;
+    height: 2px; 
+    transform: rotateY(0deg) rotate(-45deg); /* needs Y at 0 deg to behave properly*/
+    transition: transform 2s;
+
+    @media screen and (min-width: 1280px){
+        display: none;
+    }
+`;
+
+export const LeftSlash = styled.div`
+    position: absolute;
+    background: #1C598F;
+    /* White */
+    width: 50%;
+    height: 2px;    
+    transform: rotateY(0deg) rotate(45deg); /* needs Y at 0 deg to behave properly*/
+    transition: transform 2s;
+
+    @media screen and (min-width: 1280px){
+        display: none;
+    }
+`;
 
 export const NavLeft = styled.div`
 
@@ -61,13 +145,14 @@ export const NavTitle = styled.h1`
 `;
 
 export const NavRight = styled.nav`
-
+    margin: 0;
+    padding: 0;
     width: 75%;
-    justify-content: space-between;
-    flex-direction: column;
-    background: white;
-    border: 2px solid yellow;
     display: ${props => props.display ? 'flex' : 'none'};
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: #FFFFFF;
 
     @media screen and (min-width: 1280px){
         display: flex;
@@ -84,8 +169,12 @@ export const Navli = styled.li`
     text-decoration: none;
     list-style: none;
     display: flex;
-    border: 2px solid orange;
     justify-content: center;
+    width: 100%;
+
+    @media screen and (min-width: 1280px){
+        display: ${props => props.display ? props.display : "flex"};
+    }
 `;
 
 export const NavText = styled.p`
@@ -99,6 +188,17 @@ export const NavText = styled.p`
     color: #1C598F;
 
     @media screen and (min-width: 1280px){
-        color #FFFFFF
+        color #FFFFFF;
+    }
+`;
+
+export const NavLearnMoreFrame = styled.div`
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border: 4px solid #1C598F;
+
+    @media screen and (min-width: 1280px){
+        border: none;
     }
 `;

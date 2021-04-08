@@ -1,5 +1,9 @@
 import React from 'react';
-import { NavFrame, NavInner, HamburgerFrame, NavLeft, NavTitle, NavRight, Navli, NavText } from './styles/nav'
+import { NavFrame, NavInner, HamburgerFrame, HamburgerFrameInner, HamburgerDiv, ExitFrame, ExitFrameInner, 
+    RightSlash, LeftSlash,
+    NavLeft, NavTitle, NavRight, Navli, NavText, NavLearnMoreFrame 
+
+    } from './styles/nav'
 
 export default function Nav({children, ...restProps}){
     return <NavFrame {...restProps}>{children}</NavFrame>
@@ -11,6 +15,30 @@ Nav.NavInner = function NavNavInner({children, ...restProps}){
 
 Nav.HamburgerFrame = function NavHamburgerFrame({children, ...restProps}){
     return <HamburgerFrame {...restProps}>{children}</HamburgerFrame>
+}
+
+Nav.HamburgerFrameInner = function NavHamburgerFrameInner({children, ...restProps}){
+    return <HamburgerFrameInner {...restProps}>{children}</HamburgerFrameInner>
+}
+
+Nav.HamburgerDiv = function NavHamburgerDiv({children, ...restProps}){
+    return <HamburgerDiv {...restProps}>{children}</HamburgerDiv>
+}
+
+Nav.ExitFrame = function NavExitFrame({children, ...restProps}){
+    return <ExitFrame {...restProps}>{children}</ExitFrame>
+}
+
+Nav.ExitFrameInner = function NavExitFrameInner({children, ...restProps}){
+    return <ExitFrameInner {...restProps}>{children}</ExitFrameInner>
+}
+
+Nav.RightSlash = function NavRightSlash({children, ...restProps}){
+    return <RightSlash {...restProps}>{children}</RightSlash>
+}
+
+Nav.LeftSlash = function NavLeftSlash({children, ...restProps}){
+    return <LeftSlash {...restProps}>{children}</LeftSlash>
 }
 
 Nav.NavLeft = function NavNavLeft({children, ...restProps}){
@@ -32,4 +60,9 @@ Nav.Navli = function NavNavli({children, ...restProps}){
 Nav.NavText = function NavNavText({children, ...restProps}){
     return <NavText {...restProps}>{children}</NavText>
 }
+
+Nav.NavLearnMoreFrame = function NavNavLearnMoreFrame({children, ...restProps}){
+    return <NavLearnMoreFrame {...restProps}>{children}</NavLearnMoreFrame>
+}
+
 
