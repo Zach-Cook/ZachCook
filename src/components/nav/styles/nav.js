@@ -9,7 +9,7 @@ export const NavFrame = styled.header`
 
     display: flex;
     justify-content: center;
-    height: 650px;
+    // height: 650px;
 
 
     @media screen and (min-width: 1280px){
@@ -22,7 +22,6 @@ export const NavInner = styled.div`
     width: 95%;
     display: flex;
     justify-content: space-between;
-
 
 `;
 
@@ -153,8 +152,10 @@ export const NavRight = styled.nav`
     align-items: center;
     flex-direction: column;
     background: #FFFFFF;
+    height: 650px;
 
     @media screen and (min-width: 1280px){
+        height: auto;
         display: flex;
         background: none;
         width: 45%;

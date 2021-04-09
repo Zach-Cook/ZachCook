@@ -15,7 +15,7 @@ export const BackGroundIMG = styled.div`
     background-position: center center;
     height: 650px;
 
-    border 2px solid yellow;
+
     @media screen and (min-width: 1920px){
         height: 1150px;
     }
@@ -26,30 +26,46 @@ export const BackGroundInnerFrame = styled.div`
 
     width: 100%;
 
-    display: flex;
+    display: ${props => props.display ? 'none': 'flex'};
     justify-content: flex-end;
-    height: 1050px;
-    border: 2px solid pink;
+    // height: 650px;
+    // border: 2px solid pink;
+
+    @media screen and (min-width: 1920px){
+        display: flex;
+        height: 1050px;
+    }
 `
 
 export const AttributeFrame = styled.div`
 
 
-    border: 2px solid green;
-    width: 32%;
-
+    
+    width: 44%;
+    // background: black;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
 
+
+    @media screen and (min-width: 1280px){
+        width: 32%;
+    }
 `;
 
 export const TextFrame = styled.div`
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: center;
+
+    margin-top: 50px;
+
+    @media screen and (min-width: 1280px){
+        margin-top: 0px;
+        justify-content: space-between;
+    }
 `;
 
 export const TitleText = styled.h2`
@@ -57,19 +73,26 @@ export const TitleText = styled.h2`
     font-family: Lora;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 51px;
+    font-size: 20px;
 
     color: #FFFFFF;
 
+
+    @media screen and (min-width: 1280px){
+        font-size: 40px;
+    }
 `;
 
 
 export const ButtonFrame = styled.div`
 
-
+    display: none;
     width: 55%;
     border: 4px solid #1C598F;
+
+    @media screen and (min-width: 1280px){
+        display: block;
+    }
 
 `;
 

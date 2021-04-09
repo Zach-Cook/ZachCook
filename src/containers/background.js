@@ -2,15 +2,18 @@ import React  from 'react'
 import { BackGround } from '../components'
 import ZachCook  from '../images/zachcook.jpg'
 import ZachCook2 from '../images/zachcook2.jpg'
+
 export default function BackGroundContainer({children, ...restProps}){
 
-    console.log(ZachCook)
+    console.log(restProps)
+
     return (
         <>
             <BackGround>
                 <BackGround.BackGroundIMG url={ZachCook}>
                     {children}
-                    <BackGround.BackGroundInnerFrame>
+
+                    <BackGround.BackGroundInnerFrame display={restProps.isMobileNavOpen}>
                         <BackGround.AttributeFrame>
                             <BackGround.TextFrame>
                                 <BackGround.TitleText>Hello,</BackGround.TitleText>
@@ -18,10 +21,11 @@ export default function BackGroundContainer({children, ...restProps}){
                                 <BackGround.TitleText>I am a Full Stack Developer</BackGround.TitleText>
                             </BackGround.TextFrame>
                             <BackGround.ButtonFrame>
-                                <BackGround.ButtonText>Learn More</BackGround.ButtonText>
+                                <BackGround.ButtonText>View Portfolio</BackGround.ButtonText>
                             </BackGround.ButtonFrame>
                         </BackGround.AttributeFrame>
                     </BackGround.BackGroundInnerFrame>
+
                 </BackGround.BackGroundIMG>
             </BackGround>
 

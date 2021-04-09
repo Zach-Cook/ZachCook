@@ -13,12 +13,14 @@ BackGround.BackGroundIMG = function BackBackGroundIMG({children, ...restProps}){
 
 BackGround.BackGroundInnerFrame = function BackBackGroundInnerFrame({children, ...restProps}){
 
-    return <BackGroundInnerFrame url={restProps.url}>{children}</BackGroundInnerFrame>
+    console.log(restProps)
+
+    return <BackGroundInnerFrame  {...restProps}>{children}</BackGroundInnerFrame>
 }
 
 BackGround.AttributeFrame = function BackAttributeFrame({children, ...restProps}){
 
-    return <AttributeFrame url={restProps.url}>{children}</AttributeFrame>
+    return <AttributeFrame {...restProps}>{children}</AttributeFrame>
 }
 
 
@@ -26,20 +28,20 @@ BackGround.AttributeFrame = function BackAttributeFrame({children, ...restProps}
 
 BackGround.TextFrame = function BackTextFrame({children, ...restProps}){
 
-    return <TextFrame url={restProps.url}>{children}</TextFrame>
+    return <TextFrame {...restProps}>{children}</TextFrame>
 }
 
 BackGround.TitleText = function BackTitleText({children, ...restProps}){
 
-    return <TitleText url={restProps.url}>{children}</TitleText>
+    return <TitleText {...restProps}>{children}</TitleText>
 }
 
 BackGround.ButtonFrame = function BackButtonFrame({children, ...restProps}){
 
-    return <ButtonFrame url={restProps.url}>{children}</ButtonFrame>
+    return <ButtonFrame {...restProps}>{children}</ButtonFrame>
 }
 
 BackGround.ButtonText = function BackButtonText({children, ...restProps}){
 
-    return <ButtonText url={restProps.url}>{children}</ButtonText>
+    return <ButtonText {...restProps}>{children}</ButtonText>
 }
