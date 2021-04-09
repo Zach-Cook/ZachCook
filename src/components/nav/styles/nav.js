@@ -26,7 +26,7 @@ export const NavInner = styled.div`
 
 `;
 
-// MAKE THIS POSITION ABSOLUE OR STICKY
+// MAKE THIS POSITION ABSOLUE OR STICKY 
 export const HamburgerFrame = styled.div`
     
     width: 100%;
