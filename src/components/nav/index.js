@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavFrame, NavInner, HamburgerFrame, HamburgerFrameInner, HamburgerDiv, ExitFrame, ExitFrameInner, 
     RightSlash, LeftSlash,
-    NavLeft, NavTitle, NavRight, Navli, NavText, NavLearnMoreFrame 
+    NavLeft, NavTitle, NavRight, Navli, NavText, NavLearnMoreFrame, NavLine 
 
     } from './styles/nav'
 
@@ -63,6 +63,10 @@ Nav.NavText = function NavNavText({children, ...restProps}){
 
 Nav.NavLearnMoreFrame = function NavNavLearnMoreFrame({children, ...restProps}){
     return <NavLearnMoreFrame {...restProps}>{children}</NavLearnMoreFrame>
+}
+
+Nav.NavLine = function NavNavLine({children, ...restProps}){
+    return <NavLine {...restProps}>{children}</NavLine>
 }
 
 

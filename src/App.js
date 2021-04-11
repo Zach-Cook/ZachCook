@@ -10,7 +10,7 @@ import PortfolioContainer from './containers/portfolio';
 import AboutContainer from './containers/about';
 import ResumeContainer from './containers/resume';
 import ContactContainer from './containers/contact';
-
+import FooterContainer from './containers/footer';
 
 export default function App() {
 
@@ -21,8 +21,8 @@ export default function App() {
       <BackGroundContainer isMobileNavOpen={isMobileNavOpen}>
         <HeaderContainer isMobileNavOpen={isMobileNavOpen} setIsMobileNavOpen={setIsMobileNavOpen}/>
       </BackGroundContainer>
+      
       <MainContainer>
-          
         <SkillsContainer/>
         <BarContainer/>
         <PortfolioContainer/>
@@ -32,6 +32,8 @@ export default function App() {
         <BarContainer/>
         <ContactContainer/>
       </MainContainer>
+
+      <FooterContainer/>
     </>
   );
 }

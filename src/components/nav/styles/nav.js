@@ -11,8 +11,11 @@ export const NavFrame = styled.header`
     justify-content: center;
     // height: 650px;
 
+    
+    background: ${ props => props.background ? props.background : null};
 
     @media screen and (min-width: 1280px){
+        margin-top: ${ props => props.marginTop ? props.marginTop : null};
         height: auto;
     }
 `;
@@ -202,4 +205,10 @@ export const NavLearnMoreFrame = styled.div`
     @media screen and (min-width: 1280px){
         border: none;
     }
+`;
+
+export const NavLine = styled.div`
+    width: 90%;
+    height: 2px;
+    background: white;
 `;
