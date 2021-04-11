@@ -17,7 +17,7 @@ export const BackGroundIMG = styled.div`
 
 
     @media screen and (min-width: 1920px){
-        height: 1150px;
+        height: 950px;
     }
 `;
 
@@ -88,26 +88,30 @@ export const ButtonFrame = styled.div`
 
     display: none;
     width: 55%;
-    border: 4px solid #1C598F;
-
+    border: 3px solid #FFFFFF;
+    background: #0D6BBA;
+    cursor: pointer;
+    
     @media screen and (min-width: 1280px){
         display: block;
+        margin-bottom: 200px;    
     }
-
+    
 `;
 
 
 export const ButtonText = styled.h4`
 
+    margin: 25px 0;
     font-family: Lora;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 100;
     font-size: 30px;
     line-height: 38px;
     text-align: center;
-
-    color: #1C598F;
-
+    letter-spacing: 4px;
+    // color: #1C598F;
+    color: white;
 
 
 `;

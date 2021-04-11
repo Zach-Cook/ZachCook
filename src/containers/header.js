@@ -32,10 +32,10 @@ export default function HeaderContainer(props){
                         <Nav.NavText>Home</Nav.NavText>
                     </Nav.Navli>
                     <Nav.Navli>
-                        <Nav.NavText>Resume</Nav.NavText>
+                        <Nav.NavText>About</Nav.NavText>
                     </Nav.Navli>
                     <Nav.Navli>
-                        <Nav.NavText>About</Nav.NavText>
+                        <Nav.NavText>Resume</Nav.NavText>
                     </Nav.Navli>
                     <Nav.Navli>
                         <Nav.NavText>Contact</Nav.NavText>
