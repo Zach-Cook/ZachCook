@@ -17,7 +17,7 @@ export const BackGroundIMG = styled.div`
 
 
     @media screen and (min-width: 1920px){
-        height: 950px;
+        height: 1150px;
     }
 `;
 
