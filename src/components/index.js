@@ -6,3 +6,4 @@ export { default as Bar } from './bar';
 export { default as Portfolio } from './portfolio';
 export { default as About } from './about';
 export { default as Resume } from './resume';
+export { default as Contact } from './contact';

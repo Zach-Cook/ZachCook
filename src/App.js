@@ -9,6 +9,8 @@ import BarContainer from './containers/bar'
 import PortfolioContainer from './containers/portfolio';
 import AboutContainer from './containers/about';
 import ResumeContainer from './containers/resume';
+import ContactContainer from './containers/contact';
+
 
 export default function App() {
 
@@ -28,7 +30,7 @@ export default function App() {
         <AboutContainer/>
         <ResumeContainer/>
         <BarContainer/>
-
+        <ContactContainer/>
       </MainContainer>
     </>
   );
