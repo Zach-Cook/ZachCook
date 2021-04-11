@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 
 // containers
 import BackGroundContainer from './containers/background'
-
 import HeaderContainer from './containers/header'
 import MainContainer from './containers/main'
 import SkillsContainer from './containers/skills'
 import BarContainer from './containers/bar'
+import PortfolioContainer from './containers/portfolio';
 
 export default function App() {
 
@@ -20,6 +20,8 @@ export default function App() {
       <MainContainer>
           
         <SkillsContainer/>
+        <BarContainer/>
+        <PortfolioContainer/>
         <BarContainer/>
 
       </MainContainer>
