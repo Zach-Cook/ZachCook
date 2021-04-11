@@ -4,6 +4,8 @@ import React, {useState} from 'react'
 import BackGroundContainer from './containers/background'
 import HeaderContainer from './containers/header'
 import MainContainer from './containers/main'
+import SkillsContainer from './containers/skills'
+
 
 export default function App() {
 
@@ -15,8 +17,11 @@ export default function App() {
         <HeaderContainer isMobileNavOpen={isMobileNavOpen} setIsMobileNavOpen={setIsMobileNavOpen}/>
       </BackGroundContainer>
       <MainContainer>
-          <h1>test</h1>
-        </MainContainer>
+          
+        <SkillsContainer/>
+
+
+      </MainContainer>
     </>
   );
 }
