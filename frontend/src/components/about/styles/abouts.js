@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 export const AboutFrame = styled.div`
     margin: 0;
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: center;
-    background: #0D6BBA;
+    background: #f8f8f8;
+    // background: #0D6BBA;
     box-shadow: 14px 14px 28px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 `;
 
 
@@ -23,7 +25,7 @@ export const TitleText = styled.h2`
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
-    color: #FFFFFF;
+    color: #0D6BBA;
 
 `;
 
@@ -43,7 +45,7 @@ export const Text = styled.p`
     font-weight: normal;
     font-size: 28px;
     margin: 10px 0;
-    color: #FFFFFF;
+    color: #0D6BBA;
 
     &:nth-child(3) {
         margin-bottom: 50px;

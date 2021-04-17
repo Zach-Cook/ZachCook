@@ -6,6 +6,9 @@ export const ContactFrame = styled.div`
     display: flex;
     justify-content: space-between;
     height: 400px;
+
+    margin-bottom: 150px;
+
 `;
 
 export const Form = styled.div`

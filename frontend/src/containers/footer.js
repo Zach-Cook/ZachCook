@@ -8,9 +8,9 @@ export default function FooterContainer(props){
     return (
         
             <>
-                <Nav background='#212124' marginTop='150px'>
+                <Nav background='#f8f8f8'>
                     <Nav.NavLeft>
-                        <Nav.NavTitle>Zach</Nav.NavTitle>
+                        <Nav.NavTitle color='#212124'>Zach</Nav.NavTitle>
                     </Nav.NavLeft>
                     
                     <Nav.NavRight display={props.isMobileNavOpen}>
@@ -21,16 +21,16 @@ export default function FooterContainer(props){
                             </Nav.ExitFrameInner>
                         </Nav.ExitFrame>
                         <Nav.Navli>
-                            <Nav.NavText>Home</Nav.NavText>
+                            <Nav.NavText color='#212124'>Home</Nav.NavText>
                         </Nav.Navli>
                         <Nav.Navli>
-                            <Nav.NavText>About</Nav.NavText>
+                            <Nav.NavText color='#212124'>About</Nav.NavText>
                         </Nav.Navli>
                         <Nav.Navli>
-                            <Nav.NavText>Resume</Nav.NavText>
+                            <Nav.NavText color='#212124'>Resume</Nav.NavText>
                         </Nav.Navli>
                         <Nav.Navli>
-                            <Nav.NavText>Contact</Nav.NavText>
+                            <Nav.NavText color='#212124'>Contact</Nav.NavText>
                         </Nav.Navli>
                         <Nav.Navli display='none'>
                             <Nav.NavLearnMoreFrame>

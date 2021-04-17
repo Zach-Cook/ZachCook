@@ -137,7 +137,7 @@ export const NavTitle = styled.h1`
     font-size: 35px;
     line-height: 36px;
     /* identical to box height */
-    color: #FFFFFF;
+    color: ${props => props.color ? props.color : '#f8f8f8'};
     display: none;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -190,10 +190,11 @@ export const NavText = styled.p`
     font-size: 28px;
     line-height: 36px;
     /* identical to box height */
-    color: #1C598F;
-
+    color: ${props => props.color ? props.color : '#f8f8f8'};
+    
     @media screen and (min-width: 1280px){
-        color #FFFFFF;
+        cursor: pointer;
+        color: ${props => props.color ? props.color : '#f8f8f8'};
     }
 `;
 
