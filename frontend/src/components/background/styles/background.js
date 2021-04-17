@@ -70,7 +70,12 @@ export const TextFrame = styled.div`
     margin-top: 50px;
     
     @media screen and (min-width: 1280px){
-        margin-top: 150px;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1280px){
+        margin-top: 40px;
         justify-content: space-between;
     }
 `;
