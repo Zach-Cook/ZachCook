@@ -56,8 +56,8 @@ export const AttributeFrame = styled.div`
     justify-content: space-evenly;
     align-items: flex-start;
 
-
     @media screen and (min-width: 1280px){
+
         width: 32%;
     }
 `;
@@ -68,26 +68,26 @@ export const TextFrame = styled.div`
     flex-direction: column;
     // justify-content: center;
     margin-top: 50px;
-
+    
     @media screen and (min-width: 1280px){
-        margin-top: 0px;
+        margin-top: 150px;
         justify-content: space-between;
     }
 `;
 
 export const TitleText = styled.h2`
+    font-family: Arial, Helvetica, sans-serif;
 
-    font-family: Lora;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     margin: 5px 0;
     color: #FFFFFF;
-
+    font-family: Arial, Helvetica, sans-serif;
 
     @media screen and (min-width: 1280px){
         margin: 22px 0;
-        font-size: 30px;
+        font-size: 36px;
     }
 `;
 
@@ -102,16 +102,15 @@ export const ButtonFrame = styled.div`
     
     @media screen and (min-width: 1280px){
         display: block;
-        margin-bottom: 200px;    
+        margin-bottom: 100px;    
     }
     
 `;
 
 
 export const ButtonText = styled.h4`
-
+    font-family: Arial, Helvetica, sans-serif;
     margin: 25px 0;
-    font-family: Lora;
     font-style: normal;
     font-weight: 100;
     font-size: 24px;

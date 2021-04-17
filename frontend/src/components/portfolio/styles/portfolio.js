@@ -26,7 +26,7 @@ export const TitleText = styled.h2`
     font-style: normal;
     font-weight: normal;
     font-size: 60px;
-
+    font-family: Arial, Helvetica, sans-serif;
     color: #212124;
 
 `
@@ -39,6 +39,7 @@ export const PortfolioBox = styled.div`
     align-items: center;
     box-shadow: 14px 14px 28px rgba(0, 0, 0, 0.2);
 
+    
 `;
 
 export const PortfolioBoxInnerArrowFrame = styled.div`

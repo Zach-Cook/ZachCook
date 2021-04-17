@@ -139,7 +139,8 @@ export const NavTitle = styled.h1`
     /* identical to box height */
     color: #FFFFFF;
     display: none;
-    
+    font-family: Arial, Helvetica, sans-serif;
+
     @media screen and (min-width: 1280px){
         display: block;
     }
@@ -183,7 +184,7 @@ export const Navli = styled.li`
 
 export const NavText = styled.p`
 
-    font-family: Lora;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
