@@ -19,7 +19,6 @@ export const SkillsFrameInner = styled.div`
 
     width: 90%;
     
-    border: 2px solid yellow;
 `
 
 export const TitleFrame = styled.div`
@@ -31,7 +30,7 @@ export const TitleFrame = styled.div`
 
 export const TitleText = styled.h1`
     margin: 0;
-    font-family: Lora;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -44,17 +43,33 @@ export const TitleText = styled.h1`
 
 export const ImageFrame = styled.div`
 
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 35px 0;
 
-
-    margin: 50px 0;
+    @media screen and (min-width: 1280px){
+        margin: 25px 0 35px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: row;
+    }
 `
 
 export const Image = styled.img`
 
-    margin: 0;
+    
+    
     width: 100px;
-    height: 85px;
+    margin: 10px 0;
+
+
+    @media screen and (min-width: 1280px){
+        margin: 0;
+        width: 100px;
+        height: 85px;
+    }
 
 `;
