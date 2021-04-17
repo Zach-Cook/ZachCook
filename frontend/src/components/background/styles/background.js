@@ -29,7 +29,6 @@ export const BackGroundInnerFrame = styled.div`
     display: ${props => props.display ? 'none': 'flex'};
     justify-content: flex-end;
     // height: 650px;
-    border: 2px solid green;
 
     
 
@@ -68,7 +67,6 @@ export const TextFrame = styled.div`
     display: flex;
     flex-direction: column;
     // justify-content: center;
-    border: 2px solid green;
     margin-top: 50px;
 
     @media screen and (min-width: 1280px){
@@ -88,7 +86,7 @@ export const TitleText = styled.h2`
 
 
     @media screen and (min-width: 1280px){
-        margin: 10px 0;
+        margin: 22px 0;
         font-size: 30px;
     }
 `;
