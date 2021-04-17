@@ -7,9 +7,6 @@ export const AboutFrame = styled.div`
     justify-content: center;
     background: #0D6BBA;
     box-shadow: 14px 14px 28px rgba(0, 0, 0, 0.25);
-    // border-radius: 20px;
-
-    border: 2px solid pink;
 `;
 
 
@@ -22,10 +19,10 @@ export const AboutFrameInner = styled.div`
 
 export const TitleText = styled.h2`
     
-    font-family: Lora;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 60px;
+    font-size: 48px;
     color: #FFFFFF;
 
 `;
@@ -41,12 +38,15 @@ export const TextFrame = styled.div`
 
 export const Text = styled.p`
 
-    font-family: Lora;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 34px;
-
+    font-size: 28px;
+    margin: 10px 0;
     color: #FFFFFF;
 
+    &:nth-child(3) {
+        margin-bottom: 50px;
+    }
 `
 

@@ -5,7 +5,7 @@ export const PortfolioFrame = styled.div`
 
     width: 90%;
     margin: 0;
-
+    
     border: 2px solid green;
 `;
 

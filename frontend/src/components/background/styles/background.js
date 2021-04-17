@@ -76,7 +76,6 @@ export const TextFrame = styled.div`
 `;
 
 export const TitleText = styled.h2`
-    font-family: Arial, Helvetica, sans-serif;
 
     font-style: normal;
     font-weight: normal;

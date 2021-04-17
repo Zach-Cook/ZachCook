@@ -6,6 +6,6 @@ export const MainFrame = styled.main`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #FFFFFF;
+    background: #f8f8f8;
     width: 100%;
 `;

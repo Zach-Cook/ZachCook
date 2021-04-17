@@ -12,7 +12,7 @@ export const ResumeFrame = styled.div`
 export const ResumeButton = styled.div`
 
     border: 4px solid #BA0D6B;
-    width: 40%;
+    width: 35%;
 
     margin: 20px 0;
 
@@ -22,12 +22,12 @@ export const ResumeButton = styled.div`
 
 export const ResumeButtonText = styled.h6`
 
-    margin: 37px 0;
+    margin: 22px 0;
 
-    font-family: Lora;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
+    font-size: 38px;
     line-height: 61px;
     text-align: center;
     letter-spacing: 4px;
