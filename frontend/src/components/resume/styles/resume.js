@@ -11,7 +11,7 @@ export const ResumeFrame = styled.div`
 
 export const ResumeButton = styled.div`
 
-    border: 4px solid #BA0D6B;
+    border: 4px solid #0D6BBA;
     width: 35%;
 
     margin: 20px 0;
@@ -31,7 +31,7 @@ export const ResumeButtonText = styled.h6`
     line-height: 61px;
     text-align: center;
     letter-spacing: 4px;
-    color: #BA0D6B;
+    color: #0D6BBA;
 
 
 `;
