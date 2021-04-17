@@ -25,8 +25,12 @@ export default function ContactContainer(){
                                     <Contact.Text fontWeight="bold">Zach Cook</Contact.Text>
                                     <Contact.Text>(816) 797-0025</Contact.Text>
                                     <Contact.Text>zachcook8@gmail.com</Contact.Text>
+                                    <Contact.SocialLogFrame>
+                                    <Contact.SocialLogo src={GitHub} onClick={ ()=> openInNewTab("https://github.com/Zach-Cook")}/>
+                                    </Contact.SocialLogFrame>
+                                    
                                 </Contact.ItemFrame>
-                                <Contact.SocialLogo src={GitHub} onClick={ ()=> openInNewTab("https://github.com/Zach-Cook")}/>
+                                
                             </Contact.ContactInfoFrame>
                         </Contact.ContactFrameInner>
                     </Contact.InformationFrame>

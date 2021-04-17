@@ -125,8 +125,13 @@ export const LeftSlash = styled.div`
 export const NavLeft = styled.div`
 
     width: 20%;
-    display: flex;
+    display: ${props => props.display ? props.display : "flex"} ;
     align-items: center;
+
+    @media screen and (min-width: 1280px){
+        display: flex;
+    }
+
 `;
 
 export const NavTitle = styled.h1`
@@ -150,15 +155,16 @@ export const NavTitle = styled.h1`
 export const NavRight = styled.nav`
     margin: 0;
     padding: 0;
-    width: 75%;
+    width: ${props => props.width ? props.width : "75%"};
     display: ${props => props.display ? 'flex' : 'none'};
-    justify-content: space-between;
+    justify-content: ${ props => props.justifyContent ? props.justifyContent : 'space-between'};
     align-items: center;
     flex-direction: column;
     background: #FFFFFF;
-    height: 650px;
+    height: ${ props => props.height ? props.height : null};
 
     @media screen and (min-width: 1280px){
+        justify-content: space-between;
         height: auto;
         display: flex;
         background: none;
@@ -171,12 +177,12 @@ export const NavRight = styled.nav`
 
 export const Navli = styled.li`
 
+    margin: 0;
     text-decoration: none;
     list-style: none;
     display: flex;
     justify-content: center;
     width: 100%;
-
     @media screen and (min-width: 1280px){
         display: ${props => props.display ? props.display : "flex"};
     }
@@ -190,8 +196,8 @@ export const NavText = styled.p`
     font-size: 28px;
     line-height: 36px;
     /* identical to box height */
-    color: ${props => props.color ? props.color : '#f8f8f8'};
-    
+    color: ${props => props.color ? props.color : '#212124'};
+
     @media screen and (min-width: 1280px){
         cursor: pointer;
         color: ${props => props.color ? props.color : '#f8f8f8'};

@@ -110,7 +110,7 @@ export const Text = styled.p`
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: ${ props => props.fontWeight ? props.fontWeight : null};
-    font-size: 16px;
+    font-size: 14px;
 
 
     color: #4E4D53;
@@ -119,12 +119,18 @@ export const Text = styled.p`
         font-size: 24px;
     }
 `
+export const SocialLogFrame = styled.div`
+
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+`;
+
 
 export const SocialLogo = styled.img`
     
-    margin-left: 65px;
-    width: 149px;
-    height: 123px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 
 `

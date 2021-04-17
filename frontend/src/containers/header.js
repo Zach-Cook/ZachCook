@@ -21,7 +21,7 @@ export default function HeaderContainer(props){
                         <Nav.HamburgerDiv/>
                     </Nav.HamburgerFrameInner>
                 </Nav.HamburgerFrame>
-                <Nav.NavRight display={props.isMobileNavOpen}>
+                <Nav.NavRight display={props.isMobileNavOpen} height='650px'>
                     <Nav.ExitFrame>
                         <Nav.ExitFrameInner onClick={()=>props.setIsMobileNavOpen(null)}>
                             <Nav.RightSlash/>

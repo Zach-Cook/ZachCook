@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import { ContactFrame, Form, InformationFrame, ContactFrameInner, Title, HorizontalBar, ContactInfoFrame, 
-    PersonalImage, ItemFrame, Text, SocialLogo} from './styles/contact';
+    PersonalImage, ItemFrame, Text, SocialLogFrame, SocialLogo} from './styles/contact';
 
 
 export default function Contact({children, ...restProps}){
@@ -59,6 +59,11 @@ Contact.ItemFrame = function ContactItemFrame({children, ...restProps}){
 Contact.Text = function ContactText({children, ...restProps}){
 
     return <Text {...restProps}>{children}</Text>
+}
+
+Contact.SocialLogFrame = function ContactSocialLogFrame({children, ...restProps}){
+
+    return <SocialLogFrame {...restProps}>{children}</SocialLogFrame>
 }
 
 Contact.SocialLogo = function ContactSocialLogo({children, ...restProps}){
