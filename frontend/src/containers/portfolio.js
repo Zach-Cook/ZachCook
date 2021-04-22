@@ -10,7 +10,7 @@ export default function PortfolioContainer(){
 
             <Portfolio>
                 <Portfolio.TitleFrame>
-                    <Portfolio.TitleText>Portfolio:</Portfolio.TitleText>
+                    <Portfolio.TitleText>Cook Realty Co:</Portfolio.TitleText>
                 </Portfolio.TitleFrame>
                 <Portfolio.PortfolioBox>
                     <Portfolio.PortfolioBoxInnerArrowFrame>

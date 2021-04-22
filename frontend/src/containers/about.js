@@ -16,7 +16,7 @@ export default function AboutContainer(){
         <>
             <About>
                 <About.AboutFrameInner>
-                    <About.TitleText>About:</About.TitleText>
+                    {/* <About.TitleText>About:</About.TitleText> */}
                     <About.TextFrame>
                         <About.Text>- My name is Zach Cook. I graduated from the University of Kansas in 2019 with a Bachelors in Information Systems.</About.Text>
                         <About.Text>- Although not jumping directly into the software industry after graduation, I worked for my family's organization to develop many useful applications.</About.Text>

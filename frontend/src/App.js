@@ -7,6 +7,7 @@ import MainContainer from './containers/main'
 import SkillsContainer from './containers/skills'
 import BarContainer from './containers/bar'
 import PortfolioContainer from './containers/portfolio';
+import TitleContainer from './containers/title';
 import AboutContainer from './containers/about';
 import ResumeContainer from './containers/resume';
 import ContactContainer from './containers/contact';
@@ -25,11 +26,14 @@ export default function App() {
       <MainContainer>
         <SkillsContainer/>
         <BarContainer/>
+        <TitleContainer title='Portfolio'/>
         <PortfolioContainer/>
         <BarContainer/>
+        <TitleContainer title='About'/>
         <AboutContainer/>
         <ResumeContainer/>
         <BarContainer/>
+        <TitleContainer title='Contact'/>
         <ContactContainer/>
       </MainContainer>
 

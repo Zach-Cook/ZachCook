@@ -50,6 +50,10 @@ export const Text = styled.p`
     margin: 5px 0;
     color: #0D6BBA;
 
+    &:nth-child(1) {
+        margin-top: 50px;
+    }
+
     &:nth-child(3) {
         margin-bottom: 50px;
     }

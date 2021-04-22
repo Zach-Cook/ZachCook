@@ -24,7 +24,7 @@ export const InformationFrame = styled.div`
 
     width: 100%;
     background: #ffffff;
-    box-shadow: 14px 14px 28px rgba(255, 255, 255, 0.2);
+    // box-shadow: 7px 7px 14px rgba(255, 255, 255, 0.2);
     border-radius: 20px;
 
     display: flex;

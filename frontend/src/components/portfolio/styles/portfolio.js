@@ -5,28 +5,31 @@ export const PortfolioFrame = styled.div`
 
     width: 90%;
     margin: 0;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 2px solid green;
+
+    background: #f8f8f8;
 `;
 
 export const TitleFrame = styled.div`
-    width: 100%;
+    width: 90%;
     border: 2px solid pink;
 
-    margin-top: 0px;
-    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: flex-start;
 
 `;
 
-export const TitleText = styled.h2`
+export const TitleText = styled.h4`
     margin: 0;
-    font-family: Lora;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 48px;
     color: #212124;
 
 `
@@ -52,7 +55,7 @@ export const PortfolioBoxInnerArrowFrame = styled.div`
 
     
     border: 2px solid orange;
-    height: 400px;
+    height: 700px;
 
 `;
 
@@ -94,8 +97,8 @@ export const PortfolioCentralFrame = styled.div`
 
     width: 90%;
 
-    height: 400px;
-
+    height: 700px;
+    background: #C4C4C4;
     border: 2px solid yellow;
 
 `;
