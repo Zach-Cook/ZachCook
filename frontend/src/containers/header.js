@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-
-
 import { Nav } from '../components'
 
+import {Link} from 'react-scroll'
 
 export default function HeaderContainer(props){
 
@@ -29,20 +28,20 @@ export default function HeaderContainer(props){
                         </Nav.ExitFrameInner>
                     </Nav.ExitFrame>
                     <Nav.Navli>
-                        <Nav.NavText>Home</Nav.NavText>
+                        <Link to="home" spy={true} smooth={true} offset={50} duration={500}><Nav.NavText>Home</Nav.NavText></Link>
                     </Nav.Navli>
                     <Nav.Navli>
-                        <Nav.NavText>About</Nav.NavText>
+                        <Link to="about" spy={true} smooth={true} offset={50} duration={500}><Nav.NavText>About</Nav.NavText></Link>
                     </Nav.Navli>
                     <Nav.Navli>
-                        <Nav.NavText>Resume</Nav.NavText>
+                        <Nav.NavText><Link to="resume" spy={true} smooth={true}>Resume</Link></Nav.NavText>
                     </Nav.Navli>
                     <Nav.Navli>
-                        <Nav.NavText>Contact</Nav.NavText>
+                        <Nav.NavText><Link to="contact" spy={true} smooth={true}>Contact</Link></Nav.NavText>
                     </Nav.Navli>
                     <Nav.Navli display='none'>
                         <Nav.NavLearnMoreFrame>
-                            <Nav.NavText>View Portfolio</Nav.NavText>
+                            <Link to="portfolio" spy={true} smooth={true} offset={50} duration={500}><Nav.NavText>Portfolio</Nav.NavText></Link>
                         </Nav.NavLearnMoreFrame>
                     </Nav.Navli>
                 </Nav.NavRight>

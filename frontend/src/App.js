@@ -19,22 +19,32 @@ export default function App() {
 
   return (
     <>
-      <BackGroundContainer isMobileNavOpen={isMobileNavOpen}>
+      <BackGroundContainer isMobileNavOpen={isMobileNavOpen} id="home">
         <HeaderContainer isMobileNavOpen={isMobileNavOpen} setIsMobileNavOpen={setIsMobileNavOpen}/>
       </BackGroundContainer>
       
       <MainContainer>
         <SkillsContainer/>
         <BarContainer/>
+        
         <TitleContainer title='Portfolio'/>
-        <PortfolioContainer/>
+
+        <PortfolioContainer id="portfolio"/>
+
         <BarContainer/>
+
         <TitleContainer title='About'/>
-        <AboutContainer/>
-        <ResumeContainer/>
+
+        <AboutContainer id="about"/>
+
+        <ResumeContainer id="resume"/>
+
         <BarContainer/>
+
         <TitleContainer title='Contact' justifyContent="center"/>
-        <ContactContainer/>
+
+        <ContactContainer id="contact"/>
+
       </MainContainer>
 
       <FooterContainer/>
