@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { PortfolioFrame, TitleFrame, TitleText, PortfolioBox, PortfolioBoxInnerArrowFrame,
-     ArrowFrame, ArrowDivTop, ArrowDivBottom, PortfolioCentralFrame } from './styles/portfolio';
+import { PortfolioFrame, TitleFrame, TitleText, PortfolioBox, PortoflioInnerWrapper, PortfolioBoxInnerArrowFrame,
+     ArrowFrame, ArrowDivTop, ArrowDivBottom, PortfolioCentralFrame, PortfolioCenterImage, PortfolioBottom, ProjectButton, ProjectButtonText } from './styles/portfolio';
 
 export default function Portfolio({children, ...restProps}){
 
@@ -18,6 +18,10 @@ Portfolio.TitleText = function PortfolioText({children, ...restProps}){
 
 Portfolio.PortfolioBox = function PortfoliofolioBox({children, ...restProps}){
     return <PortfolioBox {...restProps}>{children}</PortfolioBox>
+}
+
+Portfolio.PortoflioInnerWrapper = function PortfolioPortoflioInnerWrapper({children, ...restProps}){
+    return <PortoflioInnerWrapper {...restProps}>{children}</PortoflioInnerWrapper>
 }
 
 Portfolio.PortfolioBoxInnerArrowFrame = function PortfoliofolioBoxInnerArrowFrame({children, ...restProps}){
@@ -39,4 +43,20 @@ Portfolio.ArrowDivBottom = function PortfolioArrowDivBottom({children, ...restPr
 
 Portfolio.PortfolioCentralFrame = function PortfolioPortfolioCentralFrame({children, ...restProps}){
     return <PortfolioCentralFrame {...restProps}>{children}</PortfolioCentralFrame>
+}
+
+Portfolio.PortfolioCenterImage = function PortfolioPortfolioCenterImage({children, ...restProps}){
+    return <PortfolioCenterImage {...restProps}>{children}</PortfolioCenterImage>
+}
+
+Portfolio.PortfolioBottom = function PortfolioPortfolioBottom({children, ...restProps}){
+    return <PortfolioBottom {...restProps}>{children}</PortfolioBottom>
+}
+
+Portfolio.ProjectButton = function PortfolioProjectButton({children, ...restProps}){
+    return <ProjectButton {...restProps}>{children}</ProjectButton>
+}
+
+Portfolio.ProjectButtonText = function PortfolioProjectButtonText({children, ...restProps}){
+    return <ProjectButtonText {...restProps}>{children}</ProjectButtonText>
 }

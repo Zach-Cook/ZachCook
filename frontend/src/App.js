@@ -33,7 +33,7 @@ export default function App() {
         <AboutContainer/>
         <ResumeContainer/>
         <BarContainer/>
-        <TitleContainer title='Contact'/>
+        <TitleContainer title='Contact' justifyContent="center"/>
         <ContactContainer/>
       </MainContainer>
 

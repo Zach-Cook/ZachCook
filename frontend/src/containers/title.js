@@ -9,7 +9,7 @@ export default function TitleContainer(props){
 
     return (
 
-        <Title justifyContent={"center"}>
+        <Title justifyContent={props.justifyContent}>
             <Title.TitleText >{props.title}</Title.TitleText>
         </Title>
 
