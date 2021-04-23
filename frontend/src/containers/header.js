@@ -31,7 +31,7 @@ export default function HeaderContainer(props){
                         <Link to="home" spy={true} smooth={true}  duration={600}><Nav.NavText>Home</Nav.NavText></Link>
                     </Nav.Navli>
                     <Nav.Navli>
-                        <Link to="about" spy={true} smooth={true}  offset={-300} duration={600}><Nav.NavText >About</Nav.NavText></Link>
+                        <Link to="about" spy={true} smooth={true}  duration={600}><Nav.NavText >About</Nav.NavText></Link>
                     </Nav.Navli>
                     <Nav.Navli>
                         <Link to="resume" spy={true} smooth={true} offset={-300} duration={600}><Nav.NavText>Resume</Nav.NavText></Link>

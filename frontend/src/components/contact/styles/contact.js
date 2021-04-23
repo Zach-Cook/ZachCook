@@ -9,6 +9,14 @@ export const ContactFrame = styled.div`
 
     margin-bottom: 150px;
 
+    @media screen and (min-width: 1280px){
+        margin-bottom: 85px;
+    }
+
+    @media screen and (min-width: 1920px){
+        margin-bottom: 150px;
+    }
+
 `;
 // not in use
 export const Form = styled.div`
@@ -40,6 +48,14 @@ export const ContactFrameInner = styled.div`
     width: 80%;
     margin: 40px 0;
 
+    @media screen and (min-width: 1280px){
+        margin: 20px 0;
+    }
+
+    @media screen and (min-width: 1920px){
+        margin: 40px 0;
+    }
+
 `;
 
 export const Title = styled.h4`
@@ -49,7 +65,7 @@ export const Title = styled.h4`
     font-weight: normal;
     font-size: 28px;
     color: #585A60;
-
+    margin: 0;
     @media screen and (min-width: 1280px){
         font-size: 32px;
     }
@@ -65,6 +81,10 @@ export const HorizontalBar = styled.div`
     margin: 20px 0;
 
     @media screen and (min-width: 1280px){
+        margin: 30px 0;
+    }
+
+    @media screen and (min-width: 1920px){
         margin: 40px 0;
     }
 `
@@ -82,7 +102,7 @@ export const PersonalImage = styled.img`
     height: 180px;
 
     @media screen and (min-width: 1280px){
-        width: 18%;
+        width: 29.75%;
         height: 250px;
     }
 

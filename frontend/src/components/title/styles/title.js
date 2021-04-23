@@ -6,6 +6,15 @@ export const TitleFrame = styled.div`
     justify-content: ${props => props.justifyContent ? props.justifyContent : "flex-start"};
     width: 90%;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1280px){
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1920px){
+        margin-bottom: 20px;
+    }
+    
 `;
 
 
@@ -20,7 +29,7 @@ export const TitleText = styled.h2`
     color: #FFFFFF;
 
     @media screen and (min-width: 1280px){
-        font-size: 42px;
+        font-size: 38px;
     }
 
     @media screen and (min-width: 1920px){

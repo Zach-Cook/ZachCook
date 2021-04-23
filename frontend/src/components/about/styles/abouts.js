@@ -59,6 +59,11 @@ export const Text = styled.p`
     }
 
     @media screen and (min-width: 1280px){
+        margin: 8px 0;
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: 1920px){
         margin: 10px 0;
         font-size: 28px;
     }

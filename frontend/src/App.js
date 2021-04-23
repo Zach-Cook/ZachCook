@@ -28,9 +28,9 @@ export default function App() {
         <SkillsContainer/>
         <BarContainer/>
         
-        <TitleContainer title='Portfolio'/>
+        <TitleContainer title='Portfolio' id="portfolio"/>
 
-        <PortfolioContainer/>
+        <PortfolioContainer />
 
         <BarContainer/>
 

@@ -19,10 +19,10 @@ export default function FooterContainer(props){
                             <Link to="home" spy={true} smooth={true}  duration={600}><Nav.NavText color='#212124'>Home</Nav.NavText></Link>
                         </Nav.Navli>
                         <Nav.Navli>
-                            <Link to="about" spy={true} smooth={true}  duration={600} offset={-300}><Nav.NavText color='#212124'>About</Nav.NavText></Link>
+                            <Link to="about" spy={true} smooth={true}  duration={600}><Nav.NavText color='#212124'>About</Nav.NavText></Link>
                         </Nav.Navli>
                         <Nav.Navli>
-                            <Link to="resume" spy={true} smooth={true}  duration={600} offset={-300}><Nav.NavText color='#212124'>Resume</Nav.NavText></Link>
+                            <Link to="resume" spy={true} smooth={true}  duration={600}><Nav.NavText color='#212124'>Resume</Nav.NavText></Link>
                         </Nav.Navli>
                         <Nav.Navli>
                             <Link to="contact" spy={true} smooth={true}  duration={600}><Nav.NavText color='#212124'>Contact</Nav.NavText></Link>

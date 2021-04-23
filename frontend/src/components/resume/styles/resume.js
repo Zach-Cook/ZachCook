@@ -26,8 +26,8 @@ export const ResumeButton = styled.div`
     cursor: pointer;
 
     @media screen and (min-width: 1280px){
-        width: 40%;
-        margin: 20px 0;
+        width: 37%;
+        margin: 18px 0;
     }
 
     @media screen and (min-width: 1920px){
@@ -51,7 +51,7 @@ export const ResumeButtonText = styled.h6`
     color: #0D6BBA;
 
     @media screen and (min-width: 1280px){
-        font-size: 34px;
+        font-size: 28px;
     }
 
     @media screen and (min-width: 1920px){

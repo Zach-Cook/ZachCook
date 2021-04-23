@@ -17,7 +17,7 @@ export default function PortfolioContainer(){
         
             <>  
 
-                <Portfolio id="portfolio">
+                <Portfolio >
                     <Portfolio.TitleFrame>
                         <Portfolio.TitleText>Cook Land and Realty LLC:</Portfolio.TitleText>
                     </Portfolio.TitleFrame>

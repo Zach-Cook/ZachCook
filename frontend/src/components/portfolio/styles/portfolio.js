@@ -21,6 +21,16 @@ export const TitleFrame = styled.div`
     display: flex;
     justify-content: flex-start;
 
+
+    @media screen and (min-width: 1280px){
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1920px){
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 `;
 
 export const TitleText = styled.h4`
@@ -30,6 +40,14 @@ export const TitleText = styled.h4`
     font-weight: 100;
     font-size: 30px;
     color: #585A60;
+
+    @media screen and (min-width: 1280px){
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: 1920px){
+        font-size: 30px;
+    }
 
 `
 
@@ -42,7 +60,6 @@ export const PortfolioBox = styled.div`
     align-items: center;
     box-shadow: 14px 14px 28px rgba(0, 0, 0, 0.2);
 
-    
 `;
 
 export const PortoflioInnerWrapper = styled.div`
@@ -53,6 +70,8 @@ export const PortoflioInnerWrapper = styled.div`
     align-items: center;
     
 
+    ////
+    margin-top: 20px;
 
 `;
 
@@ -64,9 +83,7 @@ export const PortfolioBoxInnerArrowFrame = styled.div`
 
     width: 5%;
 
-    
-    // border: 2px solid orange;
-    // height: 700px;
+
 
 `;
 
@@ -89,6 +106,16 @@ export const ArrowDivTop = styled.div`
     transform: matrix(-0.71, -0.7, 0.71, -0.71, 0, 0);
     margin-top: 15px;
     margin-bottom: 15px;
+
+    @media screen and (min-width: 1280px){
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1920px){
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
     
 `;
 
@@ -102,20 +129,39 @@ export const ArrowDivBottom = styled.div`
     width: 50%;
     margin-top: 15px;
     margin-bottom: 15px;
+
+    @media screen and (min-width: 1280px){
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1920px){
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 `;
 
 export const PortfolioCentralFrame = styled.div`
 
     width: 90%;
 
-    // height: 700px;
-    background: #C4C4C4;
+    background: #F8F8F8;
+
+    @media screen and (min-width: 1280px){
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1920px){
+        width: 90%;
+    }
 
 `;
 
 export const PortfolioCenterImage = styled.img`
 
-    width: 100%;
+    width: 87%;
 
 `;
 
@@ -133,7 +179,13 @@ export const PortfolioBottom = styled.div`
         align-items: center;
     }
 
-    `;
+    @media screen and (min-width: 1280px){
+        height: auto;
+    }
+
+
+
+`;
 
 export const ProjectButton = styled.div`
 
@@ -147,12 +199,19 @@ export const ProjectButton = styled.div`
     
     background: #0D6BBA;
 
+    margin: 10px 0;
+
     @media screen and (min-width: 1280px){
         width: 27%;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        
+        height: 45px;
+
+    }
+
+    @media screen and (min-width: 1920px){
+        height: 65px;
     }
     
 `;
