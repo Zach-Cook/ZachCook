@@ -94,6 +94,7 @@ export const TitleText = styled.h2`
     @media screen and (min-width: 1280px){
         margin: 18px 0;
         font-size: 26px;
+        width: 85%;
     }
 
     @media screen and (min-width: 1920px){
@@ -113,7 +114,9 @@ export const ButtonFrame = styled.div`
     
     @media screen and (min-width: 1280px){
         display: block;
-        // margin-bottom: 60px;    
+        // margin-bottom: 60px;
+        width: 65%;
+        margin-top: 80px;    
     }
 
     @media screen and (min-width: 1920px){
@@ -129,7 +132,6 @@ export const ButtonText = styled.h4`
     font-style: normal;
     font-weight: 100;
     font-size: 24px;
-    line-height: 38px;
     text-align: center;
     letter-spacing: 4px;
     // color: #1C598F;
