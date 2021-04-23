@@ -69,9 +69,11 @@ export const TextFrame = styled.div`
     // justify-content: center;
     margin-top: 50px;
     
+
     @media screen and (min-width: 1280px){
         margin-top: 30px;
         justify-content: space-between;
+        margin-bottom: 30px;
     }
 
     @media screen and (min-width: 1280px){
@@ -90,6 +92,11 @@ export const TitleText = styled.h2`
     font-family: Arial, Helvetica, sans-serif;
 
     @media screen and (min-width: 1280px){
+        margin: 18px 0;
+        font-size: 26px;
+    }
+
+    @media screen and (min-width: 1920px){
         margin: 22px 0;
         font-size: 36px;
     }
@@ -106,6 +113,10 @@ export const ButtonFrame = styled.div`
     
     @media screen and (min-width: 1280px){
         display: block;
+        // margin-bottom: 60px;    
+    }
+
+    @media screen and (min-width: 1920px){
         margin-bottom: 100px;    
     }
     
@@ -124,6 +135,13 @@ export const ButtonText = styled.h4`
     // color: #1C598F;
     color: white;
 
+    @media screen and (min-width: 1280px){
+        font-size: 20px;   
+    }
+
+    @media screen and (min-width: 1920px){
+        font-size: 24px;   
+    }
 
 `;
 
