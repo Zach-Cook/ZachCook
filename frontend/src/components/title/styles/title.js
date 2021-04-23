@@ -19,5 +19,13 @@ export const TitleText = styled.h2`
     font-size: 60px;
     color: #FFFFFF;
 
+    @media screen and (min-width: 1280px){
+        font-size: 42px;
+    }
+
+    @media screen and (min-width: 1920px){
+        font-size: 52px;
+    }
+
 `;
 

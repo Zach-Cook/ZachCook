@@ -10,6 +10,10 @@ export const BarFrame = styled.div`
     margin: 40px 0;
 
     @media screen and (min-width: 1280px){
+        margin: 65px 0;
+    }
+
+    @media screen and (min-width: 1920px){
         margin: 100px 0;
     }
 `;

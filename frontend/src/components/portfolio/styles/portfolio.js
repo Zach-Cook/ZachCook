@@ -8,7 +8,6 @@ export const PortfolioFrame = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    // border: 2px solid green;
 
     background: #f8f8f8;
 `;

@@ -8,6 +8,10 @@ export const ResumeFrame = styled.div`
     width 90%;
 
     @media screen and (min-width: 1280px){
+        margin-top: 65px;
+    }
+
+    @media screen and (min-width: 1920px){
         margin-top: 95px;
     }
 `;
@@ -22,6 +26,11 @@ export const ResumeButton = styled.div`
     cursor: pointer;
 
     @media screen and (min-width: 1280px){
+        width: 40%;
+        margin: 20px 0;
+    }
+
+    @media screen and (min-width: 1920px){
         width: 35%;
         margin: 20px 0;
     }
@@ -42,6 +51,10 @@ export const ResumeButtonText = styled.h6`
     color: #0D6BBA;
 
     @media screen and (min-width: 1280px){
+        font-size: 34px;
+    }
+
+    @media screen and (min-width: 1920px){
         font-size: 38px;
     }
 
