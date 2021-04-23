@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Portfolio } from '../components';
-import CookRealtyScreenShot from '../images/CookRealtyScreenshot.png'
+import CookRealtyScreenShot from '../images/CookRealtyScreenShot.png'
 
 
 export default function PortfolioContainer(){

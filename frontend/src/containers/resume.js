@@ -9,7 +9,7 @@ export default function ResumeContainer(){
         
         
         <>
-            <Resume id="resume" offset={2000}>
+            <Resume id="resume" >
                 <Resume.ResumeButton>
                     <Resume.ResumeButtonText>Download Resume</Resume.ResumeButtonText>
                 </Resume.ResumeButton>
