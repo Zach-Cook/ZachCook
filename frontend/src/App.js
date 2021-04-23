@@ -34,7 +34,7 @@ export default function App() {
 
         <BarContainer/>
 
-        <TitleContainer title='About'/>
+        <TitleContainer title='About' id="about"/>
 
         <AboutContainer />
 
@@ -42,7 +42,7 @@ export default function App() {
 
         <BarContainer/>
 
-        <TitleContainer title='Contact' justifyContent="center"/>
+        <TitleContainer title='Contact' justifyContent="center" id="contact"/>
 
         <ContactContainer/>
 

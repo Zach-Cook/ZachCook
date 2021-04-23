@@ -1,6 +1,7 @@
 import CookRealtyScreenShot from '../images/CookRealtyScreenShot.png'
 import ChainFeedScreenShot from '../images/ChainFeedScreenShot.png'
 
+
 export const portfolioData = [
     {   
         id: "1",

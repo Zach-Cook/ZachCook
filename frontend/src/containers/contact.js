@@ -13,7 +13,7 @@ export default function ContactContainer(){
         
             <>
 
-                <Contact id='contact'>
+                <Contact>
 
                     <Contact.InformationFrame >
                         <Contact.ContactFrameInner>

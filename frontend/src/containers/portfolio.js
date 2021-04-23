@@ -1,12 +1,19 @@
 import React from 'react';
-
 import { Portfolio } from '../components';
-import CookRealtyScreenShot from '../images/CookRealtyScreenShot.png'
+import usePortfolio from '../hooks/useportfolio';
+
+
+
 
 
 export default function PortfolioContainer(){
 
-    return (
+
+    const portfolioData = usePortfolio()
+
+
+    if(portfolioData){
+        return (
         
             <>  
 
@@ -26,7 +33,7 @@ export default function PortfolioContainer(){
                             </Portfolio.PortfolioBoxInnerArrowFrame>
 
                             <Portfolio.PortfolioCentralFrame>
-                                <Portfolio.PortfolioCenterImage src={CookRealtyScreenShot}/>
+                                <Portfolio.PortfolioCenterImage src={portfolioData[0].image}/>
                             </Portfolio.PortfolioCentralFrame>
 
                             <Portfolio.PortfolioBoxInnerArrowFrame>
@@ -51,4 +58,8 @@ export default function PortfolioContainer(){
             </>
         
         )
+    } else{
+        return <h1>Loading</h1>
+    }
+   
 }
