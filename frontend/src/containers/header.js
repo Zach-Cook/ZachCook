@@ -28,20 +28,20 @@ export default function HeaderContainer(props){
                         </Nav.ExitFrameInner>
                     </Nav.ExitFrame>
                     <Nav.Navli>
-                        <Link to="home" spy={true} smooth={true} offset={50} duration={500}><Nav.NavText>Home</Nav.NavText></Link>
+                        <Link to="home" spy={true} smooth={true}  duration={600}><Nav.NavText>Home</Nav.NavText></Link>
                     </Nav.Navli>
                     <Nav.Navli>
-                        <Link to="about" spy={true} smooth={true} offset={50} duration={500}><Nav.NavText>About</Nav.NavText></Link>
+                        <Link to="about" spy={true} smooth={true}  offset={-300} duration={600}><Nav.NavText >About</Nav.NavText></Link>
                     </Nav.Navli>
                     <Nav.Navli>
-                        <Nav.NavText><Link to="resume" spy={true} smooth={true}>Resume</Link></Nav.NavText>
+                        <Link to="resume" spy={true} smooth={true} offset={-300} duration={600}><Nav.NavText>Resume</Nav.NavText></Link>
                     </Nav.Navli>
                     <Nav.Navli>
-                        <Nav.NavText><Link to="contact" spy={true} smooth={true}>Contact</Link></Nav.NavText>
+                        <Link to="contact" spy={true} smooth={true} duration={600}><Nav.NavText>Contact</Nav.NavText></Link>
                     </Nav.Navli>
                     <Nav.Navli display='none'>
                         <Nav.NavLearnMoreFrame>
-                            <Link to="portfolio" spy={true} smooth={true} offset={50} duration={500}><Nav.NavText>Portfolio</Nav.NavText></Link>
+                            <Link to="portfolio" spy={true} smooth={true} duration={600}><Nav.NavText>View Portfolio</Nav.NavText></Link>
                         </Nav.NavLearnMoreFrame>
                     </Nav.Navli>
                 </Nav.NavRight>

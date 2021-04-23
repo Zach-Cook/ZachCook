@@ -13,9 +13,9 @@ export default function ContactContainer(){
         
             <>
 
-                <Contact>
+                <Contact id='contact'>
 
-                    <Contact.InformationFrame>
+                    <Contact.InformationFrame >
                         <Contact.ContactFrameInner>
                             <Contact.Title>Contact Information: </Contact.Title>
                             <Contact.HorizontalBar/>

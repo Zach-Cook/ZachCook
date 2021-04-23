@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Nav } from '../components';
+import {Link} from 'react-scroll'
 
 export default function FooterContainer(props){
 
@@ -15,16 +16,16 @@ export default function FooterContainer(props){
                     
                     <Nav.NavRight display='flex' width="100%" justifyContent='none'>
                         <Nav.Navli>
-                            <Nav.NavText color='#212124'>Home</Nav.NavText>
+                            <Link to="home" spy={true} smooth={true}  duration={600}><Nav.NavText color='#212124'>Home</Nav.NavText></Link>
                         </Nav.Navli>
                         <Nav.Navli>
-                            <Nav.NavText color='#212124'>About</Nav.NavText>
+                            <Link to="about" spy={true} smooth={true}  duration={600} offset={-300}><Nav.NavText color='#212124'>About</Nav.NavText></Link>
                         </Nav.Navli>
                         <Nav.Navli>
-                            <Nav.NavText color='#212124'>Resume</Nav.NavText>
+                            <Link to="resume" spy={true} smooth={true}  duration={600} offset={-300}><Nav.NavText color='#212124'>Resume</Nav.NavText></Link>
                         </Nav.Navli>
                         <Nav.Navli>
-                            <Nav.NavText color='#212124'>Contact</Nav.NavText>
+                            <Link to="contact" spy={true} smooth={true}  duration={600}><Nav.NavText color='#212124'>Contact</Nav.NavText></Link>
                         </Nav.Navli>
                     </Nav.NavRight>
                     

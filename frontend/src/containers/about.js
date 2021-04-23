@@ -14,7 +14,7 @@ export default function AboutContainer(){
     return (
         
         <>
-            <About>
+            <About id="about">
                 <About.AboutFrameInner>
                     {/* <About.TitleText>About:</About.TitleText> */}
                     <About.TextFrame>

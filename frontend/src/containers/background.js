@@ -1,14 +1,14 @@
 import React  from 'react'
 import { BackGround } from '../components'
 import ZachCook  from '../images/zachcook.jpg'
+import {Link} from 'react-scroll'
 
 export default function BackGroundContainer({children, ...restProps}){
 
-    console.log(restProps)
 
     return (
         <>
-            <BackGround>
+            <BackGround id='home'>
                 <BackGround.BackGroundIMG mobileUrl={ZachCook}>
                     {children}
 
@@ -21,7 +21,7 @@ export default function BackGroundContainer({children, ...restProps}){
                                 <BackGround.TitleText>With proven blockchain understanding</BackGround.TitleText>
                             </BackGround.TextFrame>
                             <BackGround.ButtonFrame>
-                                <BackGround.ButtonText>View Portfolio</BackGround.ButtonText>
+                                <Link to="portfolio" spy={true} smooth={true} duration={500}><BackGround.ButtonText>View Portfolio</BackGround.ButtonText></Link>
                             </BackGround.ButtonFrame>
                         </BackGround.AttributeFrame>
                     </BackGround.BackGroundInnerFrame>

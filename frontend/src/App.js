@@ -12,6 +12,7 @@ import AboutContainer from './containers/about';
 import ResumeContainer from './containers/resume';
 import ContactContainer from './containers/contact';
 import FooterContainer from './containers/footer';
+import {Link} from 'react-scroll'
 
 export default function App() {
 
@@ -21,29 +22,29 @@ export default function App() {
     <>
       <BackGroundContainer isMobileNavOpen={isMobileNavOpen} id="home">
         <HeaderContainer isMobileNavOpen={isMobileNavOpen} setIsMobileNavOpen={setIsMobileNavOpen}/>
+        
       </BackGroundContainer>
-      
       <MainContainer>
         <SkillsContainer/>
         <BarContainer/>
         
         <TitleContainer title='Portfolio'/>
 
-        <PortfolioContainer id="portfolio"/>
+        <PortfolioContainer/>
 
         <BarContainer/>
 
         <TitleContainer title='About'/>
 
-        <AboutContainer id="about"/>
+        <AboutContainer />
 
-        <ResumeContainer id="resume"/>
+        <ResumeContainer/>
 
         <BarContainer/>
 
         <TitleContainer title='Contact' justifyContent="center"/>
 
-        <ContactContainer id="contact"/>
+        <ContactContainer/>
 
       </MainContainer>
 
