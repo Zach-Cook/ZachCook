@@ -74,6 +74,7 @@ export const PortoflioInnerWrapper = styled.div`
     ////
     margin-top: 20px;
 
+
 `;
 
 export const PortfolioBoxInnerArrowFrame = styled.div`
@@ -82,9 +83,13 @@ export const PortfolioBoxInnerArrowFrame = styled.div`
     justify-content: center;
     align-items: center;
 
-    width: 5%;
+    width: 15%;
 
+    border: 2px solid pink;
 
+    @media screen and (min-width: 1280px){
+        width: 5%;
+    }
 
 `;
 
@@ -150,6 +155,8 @@ export const PortfolioCentralFrame = styled.div`
     display: flex;
     justify-content: center;
 
+    border: 2px solid purple;
+    
     @media screen and (min-width: 1280px){
         width: 90%;
     }
@@ -162,7 +169,18 @@ export const PortfolioCentralFrame = styled.div`
 
 export const PortfolioCenterImage = styled.img`
 
-    width: 87%;
+    width: 100%;
+    height: 400px;
+
+    @media screen and (min-widt: 600px){
+        height: auto;
+    }
+
+
+    @media screen and (min-width: 1280px){
+        width: 87%;
+        
+    }
 
 `;
 
