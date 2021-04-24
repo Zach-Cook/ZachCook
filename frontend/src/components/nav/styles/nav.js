@@ -21,19 +21,25 @@ export const NavFrame = styled.header`
 
 export const NavInner = styled.div`
 
-    width: 95%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
+
+    @media screen and (min-width: 1280px){
+        justify-content: space-between;
+        width: 95%;
+    }
 `;
 
 // MAKE THIS POSITION ABSOLUE OR STICKY 
 export const HamburgerFrame = styled.div`
     
-    width: 100%;
+    width: 70%;
     display: ${ props => props.display === 'flex' ? 'none' : "flex"};
     justify-content: flex-end;    
-    margin-top: 10px;
+    height: 40px;
+    align-items: center;
 
     @media screen and (min-width: 1280px){
         display: none;
@@ -45,10 +51,10 @@ export const HamburgerFrameInner = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
     align-items: center;
-    height: 20px;
     width: 15%;
+    height: 30px;
 
     @media screen and (min-width: 1280px){
         display: none;
@@ -61,7 +67,7 @@ export const HamburgerDiv = styled.div`
     background: #FFFFFF;
     width: 100%;
     height: 2px;
-
+    margin: 4px;
 `;
 
 export const ExitFrame = styled.div`
@@ -86,6 +92,7 @@ export const ExitFrameInner = styled.div`
     height: 40px;
     display: flex;
     width: 25%;
+
 
     @media screen and (min-width: 1280px){
         display: none;
@@ -152,9 +159,10 @@ export const NavTitle = styled.h1`
 `;
 
 export const NavRight = styled.nav`
+
     margin: 0;
     padding: 0;
-    width: ${props => props.width ? props.width : "75%"};
+    width: ${props => props.width ? props.width : "100%"};
     display: ${props => props.display ? 'flex' : 'none'};
     justify-content: ${ props => props.justifyContent ? props.justifyContent : 'space-between'};
     align-items: center;
@@ -195,7 +203,7 @@ export const NavText = styled.p`
     font-size: 28px;
     line-height: 36px;
     /* identical to box height */
-    color: ${props => props.color ? props.color : '#212124'};
+    color: ${props => props.color ? props.color : '#1C598F'};
 
     @media screen and (min-width: 1280px){
         cursor: pointer;
