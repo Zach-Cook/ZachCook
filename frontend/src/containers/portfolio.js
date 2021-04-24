@@ -3,16 +3,18 @@ import { Portfolio } from '../components';
 
 // custom hooks
 import usePortfolio from '../hooks/useportfolio';
+import useWindowDimensions from '../hooks/usewindowdimensions';
 
+// helper function
 import { openInNewTab } from '../helpers/openinenewtab';
-
+import imageHandler from '../helpers/imagehandler';
 
 export default function PortfolioContainer(){
 
 
     const { portfolio, portfolioOffset, increment, decrement } = usePortfolio()
+    const windowDimensions = useWindowDimensions()
 
-    
 
     if(portfolio){
 
@@ -37,7 +39,10 @@ export default function PortfolioContainer(){
                             </Portfolio.PortfolioBoxInnerArrowFrame>
 
                             <Portfolio.PortfolioCentralFrame>
-                                <Portfolio.PortfolioCenterImage src={portfolio[portfolioOffset].image}/>
+                                <Portfolio.PortfolioCenterImage
+        
+                                    src={ imageHandler( windowDimensions, portfolio[portfolioOffset])}
+                                />
                             </Portfolio.PortfolioCentralFrame>
 
                             <Portfolio.PortfolioBoxInnerArrowFrame>

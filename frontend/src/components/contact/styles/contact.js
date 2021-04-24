@@ -7,7 +7,7 @@ export const ContactFrame = styled.div`
     justify-content: center;
     // height: 400px;
 
-    margin-bottom: 150px;
+    margin-bottom: 80px;
 
     @media screen and (min-width: 1280px){
         margin-bottom: 85px;
