@@ -9,6 +9,12 @@ import useWindowDimensions from '../hooks/usewindowdimensions';
 import { openInNewTab } from '../helpers/openinenewtab';
 import imageHandler from '../helpers/imagehandler';
 
+
+//images
+import RightArrow from '../images/right-arrow.png'
+import LeftArrow from '../images/left-arrow.png'
+
+
 export default function PortfolioContainer(){
 
 
@@ -32,8 +38,7 @@ export default function PortfolioContainer(){
                             <Portfolio.PortfolioBoxInnerArrowFrame>
 
                                 <Portfolio.ArrowFrame onClick={decrement}>
-                                    <Portfolio.ArrowDivBottom/>   
-                                    <Portfolio.ArrowDivTop/>
+                                    <Portfolio.ArrowImage src={LeftArrow}/>  
                                 </Portfolio.ArrowFrame>
 
                             </Portfolio.PortfolioBoxInnerArrowFrame>
@@ -48,8 +53,7 @@ export default function PortfolioContainer(){
                             <Portfolio.PortfolioBoxInnerArrowFrame>
 
                                 <Portfolio.ArrowFrame onClick={increment}>
-                                    <Portfolio.ArrowDivTop/>
-                                    <Portfolio.ArrowDivBottom/>    
+                                    <Portfolio.ArrowImage src={RightArrow} />  
                                 </Portfolio.ArrowFrame>
 
                             </Portfolio.PortfolioBoxInnerArrowFrame>

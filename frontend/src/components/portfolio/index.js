@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { PortfolioFrame, TitleFrame, TitleText, PortfolioBox, PortoflioInnerWrapper, PortfolioBoxInnerArrowFrame,
-     ArrowFrame, ArrowDivTop, ArrowDivBottom, PortfolioCentralFrame, PortfolioCenterImage, PortfolioBottom, ProjectButton, ProjectButtonText } from './styles/portfolio';
+     ArrowFrame, ArrowImage, ArrowDivTop, ArrowDivBottom, PortfolioCentralFrame, PortfolioCenterImage, PortfolioBottom, ProjectButton, ProjectButtonText } from './styles/portfolio';
 
 export default function Portfolio({children, ...restProps}){
 
@@ -31,6 +31,10 @@ Portfolio.PortfolioBoxInnerArrowFrame = function PortfoliofolioBoxInnerArrowFram
 
 Portfolio.ArrowFrame = function PortfolioArrowFrame({children, ...restProps}){
     return <ArrowFrame {...restProps}>{children}</ArrowFrame>
+}
+
+Portfolio.ArrowImage = function PortfolioArrowImage({children, ...restProps}){
+    return <ArrowImage {...restProps}>{children}</ArrowImage>
 }
 
 Portfolio.ArrowDivTop = function PortfolioArrowDivTop({children, ...restProps}){

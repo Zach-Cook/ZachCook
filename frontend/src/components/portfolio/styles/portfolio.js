@@ -85,7 +85,6 @@ export const PortfolioBoxInnerArrowFrame = styled.div`
 
     width: 15%;
 
-    border: 2px solid pink;
 
     @media screen and (min-width: 1280px){
         width: 5%;
@@ -101,6 +100,13 @@ export const ArrowFrame = styled.div`
     align-items: center;
 
     cursor: pointer;
+
+`;
+
+export const ArrowImage = styled.img`
+
+    height: 40px;
+    width: 40px;
 
 `;
 
@@ -155,7 +161,6 @@ export const PortfolioCentralFrame = styled.div`
     display: flex;
     justify-content: center;
 
-    border: 2px solid purple;
     
     @media screen and (min-width: 1280px){
         width: 90%;
@@ -178,8 +183,8 @@ export const PortfolioCenterImage = styled.img`
 
 
     @media screen and (min-width: 1280px){
+        height: auto;
         width: 87%;
-        
     }
 
 `;
