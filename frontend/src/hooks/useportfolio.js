@@ -8,16 +8,31 @@ export default function usePortfolio(){
 
 
     const [ portfolio, setPortfolio] = useState(null)
-
+    const [ portfolioOffset, setPortfolioOffset ] = useState(0);
 
     useEffect(()=>{
 
         const data = makeNegativeIndex(portfolioData)
-
         setPortfolio(data)
-    }, [])
+
+        
+    }, [portfolioOffset])
+
+    
 
 
-    return portfolio
+    const increment = () => {
+        
+        setPortfolioOffset(portfolioOffset + 1)
+    }
+
+    const decrement = () => {
+        
+        setPortfolioOffset(portfolioOffset - 1)
+    }
+
+
+
+    return { portfolio, portfolioOffset, increment, decrement}
 
 }

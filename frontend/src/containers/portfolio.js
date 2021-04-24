@@ -3,30 +3,28 @@ import { Portfolio } from '../components';
 
 // custom hooks
 import usePortfolio from '../hooks/useportfolio';
-import usePortfolioOffset from '../hooks/useportfoliooffset';
 
-
+import { openInNewTab } from '../helpers/openinenewtab';
 
 
 export default function PortfolioContainer(){
 
 
-    const portfolioData = usePortfolio()
-    const { portfolioOffset, increment, decrement } = usePortfolioOffset()
+    const { portfolio, portfolioOffset, increment, decrement } = usePortfolio()
 
     
 
-    if(portfolioData){
+    if(portfolio){
 
-        console.log("Length of portfolio ", portfolioData.length)
-
+        console.log("Length of portfolio ", portfolio.length)
+        
         return (
         
             <>  
 
                 <Portfolio >
                     <Portfolio.TitleFrame>
-                        <Portfolio.TitleText>Cook Land and Realty LLC:</Portfolio.TitleText>
+                        <Portfolio.TitleText>{portfolio[portfolioOffset].name}:</Portfolio.TitleText>
                     </Portfolio.TitleFrame>
 
                     <Portfolio.PortfolioBox>
@@ -41,7 +39,7 @@ export default function PortfolioContainer(){
                             </Portfolio.PortfolioBoxInnerArrowFrame>
 
                             <Portfolio.PortfolioCentralFrame>
-                                <Portfolio.PortfolioCenterImage src={portfolioData[portfolioOffset].image}/>
+                                <Portfolio.PortfolioCenterImage src={portfolio[portfolioOffset].image}/>
                             </Portfolio.PortfolioCentralFrame>
 
                             <Portfolio.PortfolioBoxInnerArrowFrame>
@@ -54,11 +52,11 @@ export default function PortfolioContainer(){
                             </Portfolio.PortfolioBoxInnerArrowFrame>
                         </Portfolio.PortoflioInnerWrapper>
                         <Portfolio.PortfolioBottom>
-                            <Portfolio.ProjectButton cursor="pointer">
+                            <Portfolio.ProjectButton cursor="pointer" onClick={ () => openInNewTab(portfolio[portfolioOffset].projectLink)}>
                                 <Portfolio.ProjectButtonText>View Project</Portfolio.ProjectButtonText>
                             </Portfolio.ProjectButton>
-                            <Portfolio.ProjectButton cursor="pointer">
-                                <Portfolio.ProjectButtonText>View Repository</Portfolio.ProjectButtonText>
+                            <Portfolio.ProjectButton cursor="pointer" onClick={ () => openInNewTab(portfolio[portfolioOffset].respositoryLink)}>
+                                <Portfolio.ProjectButtonText>{portfolio[portfolioOffset].respositoryLink ? "View Repository" : "Private Repository"}</Portfolio.ProjectButtonText>
                             </Portfolio.ProjectButton>
                         </Portfolio.PortfolioBottom>
                     </Portfolio.PortfolioBox>
