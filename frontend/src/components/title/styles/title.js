@@ -25,7 +25,7 @@ export const TitleText = styled.h2`
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 60px;
+    font-size: 32px;
     color: #FFFFFF;
 
     @media screen and (min-width: 1280px){

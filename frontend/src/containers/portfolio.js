@@ -22,7 +22,7 @@ export default function PortfolioContainer(){
 
                 <Portfolio >
                     <Portfolio.TitleFrame>
-                        <Portfolio.TitleText>{portfolio[portfolioOffset].name}:</Portfolio.TitleText>
+                        <Portfolio.TitleText>{portfolio[portfolioOffset].name}</Portfolio.TitleText>
                     </Portfolio.TitleFrame>
 
                     <Portfolio.PortfolioBox>

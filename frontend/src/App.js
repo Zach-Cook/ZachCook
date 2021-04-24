@@ -36,7 +36,6 @@ export default function App() {
         <TitleContainer title='About' id="about"/>
 
         <AboutContainer />
-
         <ResumeContainer/>
 
         <BarContainer/>

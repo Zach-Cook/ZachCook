@@ -7,7 +7,7 @@ export const BarFrame = styled.div`
 
     background: #585A60;
 
-    margin: 40px 0;
+    margin: 30px 0;
 
     @media screen and (min-width: 1280px){
         margin: 65px 0;

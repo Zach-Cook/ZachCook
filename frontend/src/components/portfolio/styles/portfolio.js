@@ -14,12 +14,12 @@ export const PortfolioFrame = styled.div`
 
 export const TitleFrame = styled.div`
     width: 90%;
-    // border: 2px solid pink;
 
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     justify-content: flex-start;
+
 
 
     @media screen and (min-width: 1280px){
@@ -38,7 +38,7 @@ export const TitleText = styled.h4`
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 22px;
     color: #585A60;
 
     @media screen and (min-width: 1280px){
@@ -59,6 +59,7 @@ export const PortfolioBox = styled.div`
     justify-content: space-between;
     align-items: center;
     box-shadow: 14px 14px 28px rgba(0, 0, 0, 0.2);
+
 
 `;
 
@@ -146,11 +147,11 @@ export const PortfolioCentralFrame = styled.div`
     width: 90%;
 
     background: #F8F8F8;
+    display: flex;
+    justify-content: center;
 
     @media screen and (min-width: 1280px){
         width: 90%;
-        display: flex;
-        justify-content: center;
     }
 
     @media screen and (min-width: 1920px){
@@ -169,9 +170,10 @@ export const PortfolioCenterImage = styled.img`
 export const PortfolioBottom = styled.div`
 
     width: 90%;
-    height: 125px;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     @media screen and (min-width: 1280px){
         flex-direction: row;
@@ -179,7 +181,7 @@ export const PortfolioBottom = styled.div`
         align-items: center;
     }
 
-    @media screen and (min-width: 1280px){
+    @media screen and (min-width: 1920px){
         height: auto;
     }
 
@@ -193,10 +195,10 @@ export const ProjectButton = styled.div`
 
     width: 90%;
     display: flex;
-    height: 65px;
+    height: 45px;
     flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
     background: #0D6BBA;
 
     margin: 10px 0;
