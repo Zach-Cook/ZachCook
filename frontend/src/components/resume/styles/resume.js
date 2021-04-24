@@ -17,7 +17,7 @@ export const ResumeFrame = styled.div`
 `;
 
 export const ResumeButton = styled.div`
-
+    
     border: 4px solid #0D6BBA;
     width: 100%;
     margin: 10px 0;

@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.js": "/static/js/main.ac0ea936.chunk.js",
+    "main.js.map": "/static/js/main.ac0ea936.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.094d12d8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.094d12d8.js.map",
+    "static/js/2.73389929.chunk.js": "/static/js/2.73389929.chunk.js",
+    "static/js/2.73389929.chunk.js.map": "/static/js/2.73389929.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.73389929.chunk.js.LICENSE.txt": "/static/js/2.73389929.chunk.js.LICENSE.txt",
+    "static/media/ChainFeedScreenShot.7d680a42.png": "/static/media/ChainFeedScreenShot.7d680a42.png",
+    "static/media/ChainFeedScreenShotMobile.3ef6427c.png": "/static/media/ChainFeedScreenShotMobile.3ef6427c.png",
+    "static/media/CookRealtyScreenShot.ea715161.png": "/static/media/CookRealtyScreenShot.ea715161.png",
+    "static/media/CookRealtyScreenShotMobile.393ec7cc.png": "/static/media/CookRealtyScreenShotMobile.393ec7cc.png",
+    "static/media/chainlink.ebc644ed.jpg": "/static/media/chainlink.ebc644ed.jpg",
+    "static/media/css.023035db.png": "/static/media/css.023035db.png",
+    "static/media/django.efb76f3b.png": "/static/media/django.efb76f3b.png",
+    "static/media/ethereum.4aa4d7e0.png": "/static/media/ethereum.4aa4d7e0.png",
+    "static/media/git.5e9c1f97.webp": "/static/media/git.5e9c1f97.webp",
+    "static/media/github.a963b4f4.jpg": "/static/media/github.a963b4f4.jpg",
+    "static/media/html5.9af3e5f5.png": "/static/media/html5.9af3e5f5.png",
+    "static/media/javascript.b2c28530.png": "/static/media/javascript.b2c28530.png",
+    "static/media/profile.b3f3def2.png": "/static/media/profile.b3f3def2.png",
+    "static/media/python.1a4bb55b.jpg": "/static/media/python.1a4bb55b.jpg",
+    "static/media/react.fb59dfc6.png": "/static/media/react.fb59dfc6.png",
+    "static/media/ubuntu.c2b6b6fd.png": "/static/media/ubuntu.c2b6b6fd.png",
+    "static/media/zachcook.f19677a5.jpg": "/static/media/zachcook.f19677a5.jpg",
+    "static/media/zachcooksitting.d1a11aba.jpg": "/static/media/zachcooksitting.d1a11aba.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.094d12d8.js",
+    "static/js/2.73389929.chunk.js",
+    "static/js/main.ac0ea936.chunk.js"
+  ]
+}

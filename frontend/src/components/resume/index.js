@@ -11,11 +11,11 @@ export default function Resume({children, ...restProps}){
 
 Resume.ResumeButton = function ResumeResumeButton({children, ...restProps}){
 
-    return <ResumeButton url={restProps.url}>{children}</ResumeButton>
+    return <ResumeButton {...restProps}>{children}</ResumeButton>
 }
 
 Resume.ResumeButtonText = function ResumeResumeButtonText({children, ...restProps}){
 
-    return <ResumeButtonText url={restProps.url}>{children}</ResumeButtonText>
+    return <ResumeButtonText {...restProps}>{children}</ResumeButtonText>
 }
 

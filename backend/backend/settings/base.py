@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 from decouple import config
-
+from rest_framework.renderers import JSONRenderer
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -13,6 +13,7 @@ SECRET_KEY = config('APP_SECRET_KEY')
 # Application definition
 
 INSTALLED_APPS = [
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -20,6 +21,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # 3rd party apps
+    'rest_framework',
     # Created Apps
     'files.apps.FilesConfig'
 ]
@@ -76,6 +79,16 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# REST_FRAMEWORK = {
+#     #this bit makes the magic.
+#     'DEFAULT_RENDERER_CLASSES': (
+#          #UnicodeJSONRenderer has an ensure_ascii = False attribute,
+#          #thus it will not escape characters.
+#         'rest_framework.renderers.UnicodeJSONRenderer',
+#          #You only need to keep this one if you're using the browsable API
+#         'rest_framework.renderers.BrowsableAPIRenderer',
+#     )
+# }
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
@@ -97,11 +110,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    # os.path.join(BASE_DIR, 'static'), dont think i need this -- but commented for collect static to work
     os.path.join(BASE_DIR, 'build/static')
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
