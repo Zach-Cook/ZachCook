@@ -33,11 +33,20 @@ export const TitleText = styled.h1`
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
 
     color: #212124;
 
     margin-top: 18px;
+
+    font-size: 32px;
+
+    @media screen and (min-width: 1280px){
+        font-size: 38px;
+    }
+
+    @media screen and (min-width: 1920px){
+        font-size: 52px;
+    }
 
 `;
 
@@ -60,11 +69,15 @@ export const ImageFrame = styled.div`
 
 export const Image = styled.img`
 
-    
-    
-    width: 100px;
+
+    width: 65px;
     margin: 10px 0;
 
+    @media screen and (min-width: 425px){
+
+        width: 85px;
+
+    }
 
     @media screen and (min-width: 1280px){
         margin: 0;
