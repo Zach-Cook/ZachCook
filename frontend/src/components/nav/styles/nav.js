@@ -24,7 +24,7 @@ export const NavInner = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-
+    align-items: flex-start;
 
     @media screen and (min-width: 1280px){
         justify-content: space-between;
@@ -40,6 +40,7 @@ export const HamburgerFrame = styled.div`
     justify-content: flex-end;    
     height: 40px;
     align-items: center;
+    margin-top: 10px;
 
     @media screen and (min-width: 1280px){
         display: none;
@@ -75,7 +76,7 @@ export const ExitFrame = styled.div`
     width: 100%;
     display: flex;
     justify-content: flex-end;
-
+    margin-top: 10px;
 
     @media screen and (min-width: 1280px){
         display: none;
@@ -134,10 +135,24 @@ export const NavLeft = styled.div`
     display: ${props => props.display ? props.display : "flex"} ;
     align-items: center;
 
+
     @media screen and (min-width: 1280px){
         display: flex;
     }
 
+`;
+
+export const NavLeftImage = styled.img`
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+
+    @media screen and (min-width: 1280px){
+        cursor: pointer;
+
+        height: 60px;
+        width: 60px;
+    }
 `;
 
 export const NavTitle = styled.h1`

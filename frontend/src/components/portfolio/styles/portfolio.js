@@ -21,7 +21,6 @@ export const TitleFrame = styled.div`
     justify-content: flex-start;
 
 
-
     @media screen and (min-width: 1280px){
         margin-top: 10px;
         margin-bottom: 10px;

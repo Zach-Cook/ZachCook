@@ -3,6 +3,8 @@ import { Nav } from '../components'
 
 import {Link} from 'react-scroll'
 
+import Profile from '../images/profile.png'
+
 export default function HeaderContainer(props){
 
     
@@ -11,7 +13,7 @@ export default function HeaderContainer(props){
         <Nav>
             <Nav.NavInner>
                 <Nav.NavLeft>
-                    <Nav.NavTitle>Zach</Nav.NavTitle>
+                    <Nav.NavLeftImage src={Profile}/>
                 </Nav.NavLeft>
                 <Nav.HamburgerFrame display={props.isMobileNavOpen}>
                     <Nav.HamburgerFrameInner onClick={()=>props.setIsMobileNavOpen('flex')}>
