@@ -199,7 +199,7 @@ export const ProjectButton = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #0D6BBA;
+    background: ${ props => props.respositoryLink ? "#BA0D6B" : "#0D6BBA"};
 
     margin: 10px 0;
     

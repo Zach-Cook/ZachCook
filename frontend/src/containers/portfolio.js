@@ -53,12 +53,16 @@ export default function PortfolioContainer(){
                             <Portfolio.ProjectButton cursor="pointer" onClick={ () => openInNewTab(portfolio[portfolioOffset].projectLink)}>
                                 <Portfolio.ProjectButtonText>View Project</Portfolio.ProjectButtonText>
                             </Portfolio.ProjectButton>
-                            <Portfolio.ProjectButton cursor="pointer" onClick={ () => {
-                                    if(portfolio[portfolioOffset].respositoryLink){
-                                        openInNewTab(portfolio[portfolioOffset].respositoryLink)
+                            <Portfolio.ProjectButton 
+                                cursor="pointer"
+                                respositoryLink={!portfolio[portfolioOffset].respositoryLink} 
+                                onClick={ () => {
+                                if(portfolio[portfolioOffset].respositoryLink){
+                                    openInNewTab(portfolio[portfolioOffset].respositoryLink)
                                     }
-                                }}>
-                                <Portfolio.ProjectButtonText>{portfolio[portfolioOffset].respositoryLink ? "View Repository" : "Private Repository"}</Portfolio.ProjectButtonText>
+                                }}
+                            >
+                                <Portfolio.ProjectButtonText >{portfolio[portfolioOffset].respositoryLink ? "View Repository" : "Private Repository"}</Portfolio.ProjectButtonText>
                             </Portfolio.ProjectButton>
                         </Portfolio.PortfolioBottom>
                     </Portfolio.PortfolioBox>
