@@ -17,6 +17,9 @@ export default function PortfolioContainer(){
     
 
     if(portfolioData){
+
+        console.log("Length of portfolio ", portfolioData.length)
+
         return (
         
             <>  
@@ -30,7 +33,7 @@ export default function PortfolioContainer(){
                         <Portfolio.PortoflioInnerWrapper>
                             <Portfolio.PortfolioBoxInnerArrowFrame>
 
-                                <Portfolio.ArrowFrame onclick={decrement}>
+                                <Portfolio.ArrowFrame onClick={decrement}>
                                     <Portfolio.ArrowDivBottom/>   
                                     <Portfolio.ArrowDivTop/>
                                 </Portfolio.ArrowFrame>

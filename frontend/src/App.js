@@ -12,7 +12,6 @@ import AboutContainer from './containers/about';
 import ResumeContainer from './containers/resume';
 import ContactContainer from './containers/contact';
 import FooterContainer from './containers/footer';
-import {Link} from 'react-scroll'
 
 export default function App() {
 
