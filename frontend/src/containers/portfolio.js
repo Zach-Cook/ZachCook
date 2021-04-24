@@ -1,7 +1,9 @@
 import React from 'react';
 import { Portfolio } from '../components';
-import usePortfolio from '../hooks/useportfolio';
 
+// custom hooks
+import usePortfolio from '../hooks/useportfolio';
+import usePortfolioOffset from '../hooks/useportfoliooffset';
 
 
 
@@ -10,7 +12,9 @@ export default function PortfolioContainer(){
 
 
     const portfolioData = usePortfolio()
+    const { portfolioOffset, increment, decrement } = usePortfolioOffset()
 
+    
 
     if(portfolioData){
         return (
@@ -25,22 +29,25 @@ export default function PortfolioContainer(){
                     <Portfolio.PortfolioBox>
                         <Portfolio.PortoflioInnerWrapper>
                             <Portfolio.PortfolioBoxInnerArrowFrame>
-                                <Portfolio.ArrowFrame>
+
+                                <Portfolio.ArrowFrame onclick={decrement}>
                                     <Portfolio.ArrowDivBottom/>   
                                     <Portfolio.ArrowDivTop/>
-                                    
                                 </Portfolio.ArrowFrame>
+
                             </Portfolio.PortfolioBoxInnerArrowFrame>
 
                             <Portfolio.PortfolioCentralFrame>
-                                <Portfolio.PortfolioCenterImage src={portfolioData[0].image}/>
+                                <Portfolio.PortfolioCenterImage src={portfolioData[portfolioOffset].image}/>
                             </Portfolio.PortfolioCentralFrame>
 
                             <Portfolio.PortfolioBoxInnerArrowFrame>
-                                <Portfolio.ArrowFrame>
+
+                                <Portfolio.ArrowFrame onClick={increment}>
                                     <Portfolio.ArrowDivTop/>
                                     <Portfolio.ArrowDivBottom/>    
                                 </Portfolio.ArrowFrame>
+
                             </Portfolio.PortfolioBoxInnerArrowFrame>
                         </Portfolio.PortoflioInnerWrapper>
                         <Portfolio.PortfolioBottom>
