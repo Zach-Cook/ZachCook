@@ -20,5 +20,5 @@ export const portfolioData = [
         mobileImage: ChainFeedScreenShotMobile,
         projectLink: "https://chainfeed.io/",
         respositoryLink: "https://github.com/Zach-Cook/chainfeed"
-    }
+    },
 ]
