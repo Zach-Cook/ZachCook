@@ -1,6 +1,7 @@
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
+from .base import *
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
 ALLOWED_HOSTS = ["zachcook.io", '127.0.0.1', 'localhost']
 
 # Database
