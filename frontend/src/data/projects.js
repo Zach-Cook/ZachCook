@@ -10,7 +10,7 @@ export const portfolioData = [
         name: "Cook Land and Realty LLC: ",
         image: CookRealtyScreenShot,
         mobileImage: CookRealtyScreenShotMobile,
-        projectLink: "https://cookrealtycostaging.com/",
+        projectLink: "https://cookrealtyco.com/",
         respositoryLink: null
     },
     {
