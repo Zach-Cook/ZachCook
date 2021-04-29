@@ -1,8 +1,8 @@
 
 # ZachCook.io
-[ChainFeed.io](https://zachcook.io)
+[ZachCook.io](https://zachcook.io)
 
-This is my personal Portfolio Website!
+This is my Responsive Personal Portfolio Website!
 
 Built using:
 
