@@ -9,9 +9,10 @@ import Ethereum from '../images/ethereum.png';
 import Git from '../images/git.webp';
 import HTML5 from '../images/html5.png'
 import Javascript from '../images/javascript.png';
-import Python from '../images/python.jpg';
+import Python from '../images/python.png';
 import ReactEmblem from '../images/react.png';
 import Ubuntu from '../images/ubuntu.png';
+import TypeScript from'../images/TypeScript.png';
 
 export default function SkillsContainer(){
 
@@ -24,12 +25,14 @@ export default function SkillsContainer(){
                         <Skills.TitleText>Skills:</Skills.TitleText>
                     </Skills.TitleFrame>
                     <Skills.ImageFrame>
-                        <Skills.Image src={Ethereum} />
-                        <Skills.Image src={ChainLink} />
+                        
                         <Skills.Image src={ReactEmblem} />
                         <Skills.Image src={Javascript} />
+                        <Skills.Image src={TypeScript}/>
                         <Skills.Image src={HTML5} />
                         <Skills.Image src={Css} />
+                        <Skills.Image src={Ethereum} />
+                        <Skills.Image src={ChainLink} />
                         <Skills.Image src={Python} />
                         <Skills.Image src={Django} />                
                         <Skills.Image src={Git} />
