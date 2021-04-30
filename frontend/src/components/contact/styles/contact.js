@@ -140,10 +140,16 @@ export const Text = styled.p`
     }
 `
 export const SocialLogFrame = styled.div`
-
-    width: 100%;
+    
+    width: 70%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+
+
+    @media screen and (min-width: 1280px){
+        width: 45%;
+    }
+
 `;
 
 
