@@ -5,11 +5,8 @@ export const NavFrame = styled.header`
     padding:0;
     
     width: 100%;
-
     display: flex;
     justify-content: center;
-    // height: 650px;
-
     
     background: ${ props => props.background ? props.background : null};
 
@@ -182,7 +179,6 @@ export const NavRight = styled.nav`
     justify-content: ${ props => props.justifyContent ? props.justifyContent : 'space-between'};
     align-items: center;
     flex-direction: column;
-    background: #FFFFFF;
     height: ${ props => props.height ? props.height : null};
 
     @media screen and (min-width: 1280px){

@@ -10,7 +10,7 @@ export default function HeaderContainer(props){
     
 
     return(
-        <Nav>
+        <Nav >
             <Nav.NavInner>
                 <Nav.NavLeft>
                     <Nav.NavLeftImage src={Profile}/>
