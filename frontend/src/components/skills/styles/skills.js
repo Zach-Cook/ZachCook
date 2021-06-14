@@ -7,7 +7,7 @@ export const SkillsFrame = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    background: #FFFFFF;
+    background: #202529;
     box-shadow: 0px 32px 84px rgba(27, 26, 30, 0.12);
 
 
@@ -34,7 +34,7 @@ export const TitleText = styled.h1`
     font-style: normal;
     font-weight: normal;
 
-    color: #212124;
+    color: #FFFFFF;
 
     margin-top: 18px;
 

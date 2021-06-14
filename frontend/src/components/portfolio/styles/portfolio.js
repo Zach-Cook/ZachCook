@@ -9,7 +9,8 @@ export const PortfolioFrame = styled.div`
     flex-direction: column;
     align-items: center;
 
-    background: #f8f8f8;
+    background: #2F3338;
+    border-radius: 8px;
 `;
 
 export const TitleFrame = styled.div`
@@ -38,7 +39,7 @@ export const TitleText = styled.h4`
     font-style: normal;
     font-weight: 100;
     font-size: 22px;
-    color: #585A60;
+    color: #0D6BBA;
 
     @media screen and (min-width: 1280px){
         font-size: 24px;
@@ -111,7 +112,7 @@ export const ArrowImage = styled.img`
 
 export const ArrowDivTop = styled.div`
 
-    background: #212124;
+    background: #2F3338;
     height: 2px;
     width: 50%;
     transform: matrix(-0.71, -0.7, 0.71, -0.71, 0, 0);
@@ -135,7 +136,7 @@ export const ArrowDivBottom = styled.div`
     transform: matrix(-0.71, 0.7, -0.71, -0.71, 0, 0);
 
     
-    background: #212124;
+    background: #2F3338;
     height: 2px;
     width: 50%;
     margin-top: 15px;
@@ -156,7 +157,7 @@ export const PortfolioCentralFrame = styled.div`
 
     width: 90%;
 
-    background: #F8F8F8;
+    background: #2F3338;
     display: flex;
     justify-content: center;
 

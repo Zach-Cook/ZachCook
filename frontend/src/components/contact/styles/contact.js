@@ -31,7 +31,7 @@ export const Form = styled.div`
 export const InformationFrame = styled.div`
 
     width: 100%;
-    background: #ffffff;
+    background: #2F3338;
     // box-shadow: 7px 7px 14px rgba(255, 255, 255, 0.2);
     border-radius: 20px;
 
@@ -64,7 +64,7 @@ export const Title = styled.h4`
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
-    color: #585A60;
+    color: #FFFFFF;
     margin: 0;
     @media screen and (min-width: 1280px){
         font-size: 32px;
@@ -133,7 +133,7 @@ export const Text = styled.p`
     font-size: 14px;
 
 
-    color: #4E4D53;
+    color: #FFFFFF;
 
     @media screen and (min-width: 1280px){
         font-size: 24px;

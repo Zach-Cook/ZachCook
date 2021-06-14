@@ -53,7 +53,7 @@ export default function PortfolioContainer(){
                             <Portfolio.PortfolioBoxInnerArrowFrame>
 
                                 <Portfolio.ArrowFrame onClick={increment}>
-                                    <Portfolio.ArrowImage src={RightArrow} />  
+                                    <Portfolio.ArrowImage src={RightArrow} style={{color: "#FFFFFF"}}/>  
                                 </Portfolio.ArrowFrame>
 
                             </Portfolio.PortfolioBoxInnerArrowFrame>

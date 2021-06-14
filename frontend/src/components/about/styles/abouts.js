@@ -5,8 +5,7 @@ export const AboutFrame = styled.div`
     width: 95%;
     display: flex;
     justify-content: center;
-    background: #f8f8f8;
-    // background: #0D6BBA;
+    background: #2F3338;
     box-shadow: 14px 14px 28px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 `;
@@ -45,10 +44,11 @@ export const Text = styled.p`
 
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
+    letter-spacing: .5px;
     font-weight: normal;
     font-size: 20px;
     margin: 5px 0;
-    color: #0D6BBA;
+    color: #FFFFFF;
 
     &:nth-child(1) {
         margin-top: 50px;
