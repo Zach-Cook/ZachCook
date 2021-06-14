@@ -179,6 +179,7 @@ export const NavRight = styled.nav`
     justify-content: ${ props => props.justifyContent ? props.justifyContent : 'space-between'};
     align-items: center;
     flex-direction: column;
+    background: #202529;
     height: ${ props => props.height ? props.height : null};
 
     @media screen and (min-width: 1280px){

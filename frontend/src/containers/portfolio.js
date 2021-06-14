@@ -14,6 +14,8 @@ import imageHandler from '../helpers/imagehandler';
 import RightArrow from '../images/right-arrow.png'
 import LeftArrow from '../images/left-arrow.png'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowCircleRight, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'
 
 export default function PortfolioContainer(){
 
@@ -21,6 +23,12 @@ export default function PortfolioContainer(){
     const { portfolio, portfolioOffset, increment, decrement } = usePortfolio()
     const windowDimensions = useWindowDimensions()
 
+
+    const arrowStyle={
+        color: "#FFFFFF",
+        height: "40px",
+        width: "40px"
+    }
 
     if(portfolio){
 
@@ -34,11 +42,10 @@ export default function PortfolioContainer(){
                     </Portfolio.TitleFrame>
 
                     <Portfolio.PortfolioBox>
-                        <Portfolio.PortoflioInnerWrapper>
-                            <Portfolio.PortfolioBoxInnerArrowFrame>
-
-                                <Portfolio.ArrowFrame onClick={decrement}>
-                                    <Portfolio.ArrowImage src={LeftArrow}/>  
+                        <Portfolio.PortoflioInnerWrapper >
+                            <Portfolio.PortfolioBoxInnerArrowFrame >
+                                <Portfolio.ArrowFrame onClick={decrement} >
+                                    <FontAwesomeIcon icon={faArrowCircleLeft} style={arrowStyle}/>
                                 </Portfolio.ArrowFrame>
 
                             </Portfolio.PortfolioBoxInnerArrowFrame>
@@ -53,7 +60,7 @@ export default function PortfolioContainer(){
                             <Portfolio.PortfolioBoxInnerArrowFrame>
 
                                 <Portfolio.ArrowFrame onClick={increment}>
-                                    <Portfolio.ArrowImage src={RightArrow} style={{color: "#FFFFFF"}}/>  
+                                    <FontAwesomeIcon icon={faArrowCircleRight} style={arrowStyle}/>
                                 </Portfolio.ArrowFrame>
 
                             </Portfolio.PortfolioBoxInnerArrowFrame>
