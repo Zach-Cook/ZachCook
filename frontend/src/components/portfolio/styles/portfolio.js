@@ -39,7 +39,7 @@ export const TitleText = styled.h4`
     font-style: normal;
     font-weight: 100;
     font-size: 22px;
-    color: #0D6BBA;
+    color: #888B8D;
 
     @media screen and (min-width: 1280px){
         font-size: 24px;
