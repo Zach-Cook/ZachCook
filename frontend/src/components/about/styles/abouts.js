@@ -48,7 +48,7 @@ export const Text = styled.p`
     font-weight: normal;
     font-size: 20px;
     margin: 5px 0;
-    color: #FFFFFF;
+    color: #888B8D;
 
     &:nth-child(1) {
         margin-top: 50px;

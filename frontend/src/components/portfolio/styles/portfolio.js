@@ -58,7 +58,6 @@ export const PortfolioBox = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 14px 14px 28px rgba(0, 0, 0, 0.2);
 
 
 `;
@@ -206,6 +205,7 @@ export const PortfolioBottom = styled.div`
 
     @media screen and (min-width: 1920px){
         height: auto;
+        margin: 20px 0;
     }
 
 
