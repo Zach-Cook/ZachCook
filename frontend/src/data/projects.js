@@ -4,6 +4,9 @@ import ChainFeedScreenShot from '../images/ChainFeedScreenShot.png'
 import CookRealtyScreenShotMobile from '../images/CookRealtyScreenShotMobile.png'
 import ChainFeedScreenShotMobile from '../images/ChainFeedScreenShotMobile.png'
 
+
+import ToDoDappScreenShot from '../images/ToDoDapp.png'
+
 export const portfolioData = [
     {   
         id: "1",
@@ -21,4 +24,12 @@ export const portfolioData = [
         projectLink: "https://chainfeed.io/",
         respositoryLink: "https://github.com/Zach-Cook/chainfeed"
     },
+    {
+        id: "3",
+        name: "ToDoDapp.com: ",
+        image: ToDoDappScreenShot,
+        mobileImage: ChainFeedScreenShotMobile,
+        projectLink: "https://tododapp.com/",
+        respositoryLink: "https://github.com/Zach-Cook/ToDoDapp"
+    }
 ]
