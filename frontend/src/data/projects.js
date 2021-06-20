@@ -6,7 +6,7 @@ import ChainFeedScreenShotMobile from '../images/ChainFeedScreenShotMobile.png'
 
 
 import ToDoDappScreenShot from '../images/ToDoDapp.png'
-
+import ToDoDappMobile from '../images/ToDoDappMobile.png'
 export const portfolioData = [
     {   
         id: "1",
@@ -28,7 +28,7 @@ export const portfolioData = [
         id: "3",
         name: "ToDoDapp.com: ",
         image: ToDoDappScreenShot,
-        mobileImage: ChainFeedScreenShotMobile,
+        mobileImage: ToDoDappMobile,
         projectLink: "https://tododapp.com/",
         respositoryLink: "https://github.com/Zach-Cook/ToDoDapp"
     }
