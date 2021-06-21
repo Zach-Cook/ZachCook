@@ -24,7 +24,8 @@ INSTALLED_APPS = [
     # 3rd party apps
     'rest_framework',
     # Created Apps
-    'files.apps.FilesConfig'
+    "resume",
+    "projects"
 ]
 
 MIDDLEWARE = [
