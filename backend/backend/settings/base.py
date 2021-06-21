@@ -26,7 +26,10 @@ INSTALLED_APPS = [
     'corsheaders',
     # Created Apps
     "resume",
-    "projects"
+    "projects",
+
+    # cleanup
+    'django_cleanup.apps.CleanupConfig'
 ]
 
 MIDDLEWARE = [
