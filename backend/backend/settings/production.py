@@ -4,6 +4,9 @@ from .base import *
 DEBUG = False
 ALLOWED_HOSTS = ["zachcook.io", '127.0.0.1', 'localhost']
 
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:8000",
+]
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 

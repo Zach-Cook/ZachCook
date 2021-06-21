@@ -9,6 +9,7 @@ ALLOWED_HOSTS = ["*"]
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
     "http://localhost:3001",
+    "http://localhost:8000",
     "http://172.16.1.237:3000",
     "http://192.168.1.39:3000",
     "http://192.168.1.131:3000",
