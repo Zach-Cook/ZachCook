@@ -30,8 +30,13 @@ export default function usePortfolio(){
 
         getData()
 
+        return ()=> {
+            setPortfolio(null)
+            setPortfolioLength(null)
+            setPortfolioOffset(null)
+        }
         
-    }, [portfolioOffset])
+    }, [])
 
 
     const increment = () => {
