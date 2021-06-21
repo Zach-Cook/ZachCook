@@ -9,6 +9,7 @@ class ResumeView(APIView):
 
     def get(self, request):
 
+        # gets the last resume posted as it is the most up to date
         resume = Resume.objects.last()
         serializer = ResumeSerializer(resume, many=False)
 

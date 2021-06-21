@@ -7,5 +7,5 @@ class Resume(models.Model):
     Resume = models.FileField()
 
     def __str__(self):
-        return str(self.id) +  " " + self.DateAdded.strftime("%A, %d %b %Y, %H:%M")
+        return "Resume Item " + " " + str(self.id) +  ": Posted on " + self.DateAdded.strftime("%A, %d %b %Y, %H:%M")
 
