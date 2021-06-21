@@ -8,8 +8,9 @@ class ProjectView(APIView):
 
 
     def get(self, request):
+        print('calling')
 
         projects = Project.objects.all()
         serializer = ProjectSerializer(projects, many=True)
 
-        return Response(serializer.data)
+        return Response(serializer.data, status=200)

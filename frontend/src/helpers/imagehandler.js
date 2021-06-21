@@ -4,9 +4,9 @@ export default function imageHandler(windowSize, porfolioItem){
 
 
     if(windowSize.width > 1000){
-        return porfolioItem.image
+        return porfolioItem.LargeImage
     } else {
-        return porfolioItem.mobileImage
+        return porfolioItem.MobileImage
     }
 
 }

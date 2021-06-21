@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 
 import makeNegativeIndex from '../proxy/makenegativeindex'
-import { portfolioData } from '../data/projects'
+
+import api from '../api/axios'
 
 
 export default function usePortfolio(){
@@ -13,9 +14,21 @@ export default function usePortfolio(){
 
     useEffect(()=>{
 
-        const data = makeNegativeIndex(portfolioData)
-        setPortfolioLength(portfolioData.length)
-        setPortfolio(data)
+        async function getData(){
+
+            try{
+                const data = await api.get(`/project/api/v1/project/`)
+                
+                const negativeIndexData = await makeNegativeIndex(data.data)
+                setPortfolioLength(negativeIndexData.length)
+                setPortfolio(negativeIndexData)
+
+            } catch (err){
+                console.log(err)
+            }   
+        }
+
+        getData()
 
         
     }, [portfolioOffset])

@@ -10,10 +10,6 @@ import { openInNewTab } from '../helpers/openinenewtab';
 import imageHandler from '../helpers/imagehandler';
 
 
-//images
-import RightArrow from '../images/right-arrow.png'
-import LeftArrow from '../images/left-arrow.png'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleRight, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'
 
@@ -32,13 +28,14 @@ export default function PortfolioContainer(){
 
     if(portfolio){
 
+
         return (
         
             <>  
 
                 <Portfolio >
                     <Portfolio.TitleFrame>
-                        <Portfolio.TitleText>{portfolio[portfolioOffset].name}</Portfolio.TitleText>
+                        <Portfolio.TitleText>{portfolio[portfolioOffset].Name}</Portfolio.TitleText>
                     </Portfolio.TitleFrame>
 
                     <Portfolio.PortfolioBox>
@@ -53,7 +50,7 @@ export default function PortfolioContainer(){
                             <Portfolio.PortfolioCentralFrame>
                                 <Portfolio.PortfolioCenterImage
         
-                                    src={ imageHandler( windowDimensions, portfolio[portfolioOffset])}
+                                    src={`${process.env.REACT_APP_BASE_URL}${imageHandler( windowDimensions, portfolio[portfolioOffset])}`}
                                 />
                             </Portfolio.PortfolioCentralFrame>
 
@@ -66,19 +63,19 @@ export default function PortfolioContainer(){
                             </Portfolio.PortfolioBoxInnerArrowFrame>
                         </Portfolio.PortoflioInnerWrapper>
                         <Portfolio.PortfolioBottom>
-                            <Portfolio.ProjectButton cursor="pointer" onClick={ () => openInNewTab(portfolio[portfolioOffset].projectLink)}>
+                            <Portfolio.ProjectButton cursor="pointer" onClick={ () => openInNewTab(portfolio[portfolioOffset].ProjectLink)}>
                                 <Portfolio.ProjectButtonText>View Project</Portfolio.ProjectButtonText>
                             </Portfolio.ProjectButton>
                             <Portfolio.ProjectButton 
                                 cursor="pointer"
-                                respositoryLink={!portfolio[portfolioOffset].respositoryLink} 
+                                respositoryLink={!portfolio[portfolioOffset].RepositoryLink} 
                                 onClick={ () => {
-                                if(portfolio[portfolioOffset].respositoryLink){
-                                    openInNewTab(portfolio[portfolioOffset].respositoryLink)
+                                if(portfolio[portfolioOffset].RepositoryLink){
+                                    openInNewTab(portfolio[portfolioOffset].RepositoryLink)
                                     }
                                 }}
                             >
-                                <Portfolio.ProjectButtonText >{portfolio[portfolioOffset].respositoryLink ? "View Repository" : "Private Repository"}</Portfolio.ProjectButtonText>
+                                <Portfolio.ProjectButtonText >{portfolio[portfolioOffset].RepositoryLink ? "View Repository" : "Private Repository"}</Portfolio.ProjectButtonText>
                             </Portfolio.ProjectButton>
                         </Portfolio.PortfolioBottom>
                     </Portfolio.PortfolioBox>

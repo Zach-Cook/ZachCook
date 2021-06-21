@@ -23,12 +23,15 @@ INSTALLED_APPS = [
 
     # 3rd party apps
     'rest_framework',
+    'corsheaders',
     # Created Apps
     "resume",
     "projects"
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
